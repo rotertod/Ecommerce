@@ -1,0 +1,290 @@
+﻿<header class="header-2 bg-white">
+    <!-- Begin Header Top Area -->
+    <div class="header-top">
+        <div class="container">
+            <div class="header-top-nav">
+                <div class="row">
+                    <!-- Begin Header Top Left Area Area -->
+                    <div class="col-lg-5 col-md-6">
+                        <div class="top-selector-wrapper">
+                            <ul class="single-top-selector">
+                                <!-- Begin Language Area -->
+                                <li class="language list-inline-item">
+                                    <span>Language:</span>
+                                    <div class="btn-group">
+                                        <button class="dropdown-toggle"><img src="~/Content/assets/images/menu/flag-icon/1.jpg" alt="">English<i class="fa fa-caret-down"></i></button>
+                                        <div class="dropdown-menu">
+                                            <ul>
+                                                <li><a href="#"><img src="~/Content/assets/images/menu/flag-icon/1.jpg" alt=""> English</a></li>
+                                                <li><a href="#"><img src="~/Content/assets/images/menu/flag-icon/2.jpg" alt=""> Français</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <!-- Language End Here -->
+                                <!-- Begin Currency Area -->
+                                <li class="currency list-inline-item">
+                                    <span>Currency:</span>
+                                    <div class="btn-group">
+                                        <button class="dropdown-toggle"> USD $ <i class="fa fa-caret-down"></i></button>
+                                        <div class="dropdown-menu">
+                                            <ul>
+                                                <li><a href="#">Euro €</a></li>
+                                                <li><a href="#" class="current">USD $</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+                                <!-- Currency Area End Here -->
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Header Top Left Area End Here -->
+                    <!-- Begin Header Top Right Area -->
+                    <div class="col-lg-7 col-md-6">
+                        <div class="header-top-right">
+                            @{
+                                var user = (Ecommerce.Models.Customer)HttpContext.Current.Session["user"];
+                            }
+
+                            @if (user != null)
+                            {
+                                // Người dùng đã đăng nhập
+                                <div style="display: flex; justify-content: flex-end">
+                                    <div>
+                                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                                            <img class="rounded-circle me-lg-2" src="~/Content/images/customers/@user.Avatar" alt="" style="width: 40px; height: 40px; object-fit: cover">
+                                            <span class="d-none d-lg-inline-flex" style="font-size: 16px">@user.FullName</span>
+                                        </a>
+                                        <div class="dropdown-menu dropdown-menu-end bg-white border-1 rounded-0 rounded-bottom m-0">
+                                            <a href="~/Account/MyProfile/@user.CustomerID" class="dropdown-item">My Profile</a>
+                                            <a href="#" class="dropdown-item">Settings</a>
+                                            <a href="~/Account/Logout" class="dropdown-item">Log Out</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+                            else
+                            {
+                                // Người dùng chưa đăng nhập
+                                <ul class="user-block list-inline">
+                                    <li><a href="~/Account/Register">Đăng ký</a></li>
+                                    <li><a href="~/Account/Login">Đăng nhập</a></li>
+                                </ul>
+                            }
+                        </div>
+                    </div>
+                    <!-- Header Top Right Area End Here -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Header Top Area End Here -->
+    <!-- Begin Header Middle Area -->
+    <div class="header-middle">
+        <div class="container logo-nav">
+            <div class="row align-items-center">
+                <!-- Begin Logo Area -->
+                <div class="col-lg-3">
+                    <div class="logo">
+                        <a href="/">
+                            <img src="~/Content/images/logo.png" style="width: 200px; object-fit: contain" alt="FB's Logo">
+                        </a>
+                    </div>
+                </div>
+                <!-- Logo Area End Here -->
+                <!-- Begin Header Middle Right Area -->
+                <div class="col-lg-9">
+                    <!-- Begin Header Middle Right Area -->
+                    <div class="header-middle-right">
+                        <!-- Begin Header Middle Searchbox Area -->
+                        <form action="#" class="hm-searchbox">
+                            <select class="nice-select select-search-category">
+                                <option value="0">All categories</option>
+                                <option value="12">Electronics</option>
+                                <option value="23">Cameras</option>
+                                <option value="27">Cords and Cables</option>
+                                <option value="28">gps accessories</option>
+                                <option value="29">Microphones</option>
+                                <option value="30">Wireless Transmitters</option>
+                                <option value="24">GamePad</option>
+                                <option value="31">cube lifestyle hd</option>
+                                <option value="32">gopro hero4</option>
+                                <option value="33">handycam cx405</option>
+                                <option value="34">vixia hf r600</option>
+                                <option value="25">Digital Cameras</option>
+                                <option value="35">Gold eye</option>
+                                <option value="36">Questek</option>
+                                <option value="37">Snm</option>
+                                <option value="38">Vantech</option>
+                                <option value="26">Virtual Reality</option>
+                                <option value="39">Samsung</option>
+                                <option value="40">Toshiba</option>
+                                <option value="41">Transcend</option>
+                                <option value="42">Sandisk</option>
+                                <option value="13">Book</option>
+                                <option value="43">Children's Books</option>
+                                <option value="45">Early Learning</option>
+                                <option value="46">Animals</option>
+                                <option value="47">Action</option>
+                                <option value="48">Education</option>
+                                <option value="44">comic book</option>
+                                <option value="49">Superhero</option>
+                                <option value="50">Slice-of-Life</option>
+                                <option value="51">Humor</option>
+                                <option value="52">Science-Fiction</option>
+                                <option value="14">Kitchen</option>
+                                <option value="53">Large Appliances</option>
+                                <option value="55">Armchairs</option>
+                                <option value="56">Bunk Bed</option>
+                                <option value="57">Mattress</option>
+                                <option value="58">Sideboard</option>
+                                <option value="54">Small Appliances</option>
+                                <option value="59">Bootees Bags</option>
+                                <option value="60">Jackets</option>
+                                <option value="61">Shelf</option>
+                                <option value="62">Shoes</option>
+                                <option value="83">Drinkware</option>
+                                <option value="85">Tour Drinkware</option>
+                                <option value="86">Hatch Drinkware</option>
+                                <option value="87">Direction Drinkware</option>
+                                <option value="88">Crescent Drinkware</option>
+                                <option value="84">Cookware</option>
+                                <option value="89">Cookware Brands</option>
+                                <option value="90">Cookware Sets</option>
+                                <option value="91">Individual Cookware</option>
+                                <option value="92">Enamel Cookware</option>
+                                <option value="15">Tablets</option>
+                                <option value="63">Tablet</option>
+                                <option value="65">Samsung</option>
+                                <option value="66">LG</option>
+                                <option value="67">Apple</option>
+                                <option value="68">Sony</option>
+                                <option value="64">Smartphone</option>
+                                <option value="69">Nokia</option>
+                                <option value="70">Sony</option>
+                                <option value="71">Apple</option>
+                                <option value="72">Samsung</option>
+                                <option value="16">Furnitured</option>
+                                <option value="73">bedroom</option>
+                                <option value="75">Bed</option>
+                                <option value="76">lamp</option>
+                                <option value="77">Mattress Sets</option>
+                                <option value="78">Home Office</option>
+                                <option value="74">livingroom</option>
+                                <option value="79">chair</option>
+                                <option value="80">table</option>
+                                <option value="81">carpet</option>
+                                <option value="82">Sofa</option>
+                                <option value="17">Video games</option>
+                                <option value="18">Sport</option>
+                                <option value="19">Fruits</option>
+                                <option value="20">Computer</option>
+                                <option value="21">Meat</option>
+                                <option value="22">Accessories</option>
+                            </select>
+                            <input type="text" placeholder="Enter your search key ...">
+                            <button class="fb-search_btn" type="submit"><i class="fa fa-search"></i></button>
+                        </form>
+                        <!-- Header Middle Searchbox Area End Here -->
+                        <ul class="hm-menu">
+                            <!-- Begin Header Mini Cart Area -->
+                            <li class="hm-minicart">
+                                <div class="hm-minicart-trigger">
+                                    <span class="item-icon"></span>
+                                    <span class="item-text">
+                                        My Cart
+                                        <span class="cart-item-count">2</span>
+                                    </span>
+                                    <span class="item-total">$120.00</span>
+                                </div>
+                                <span></span>
+                                <div class="minicart">
+                                    <ul class="minicart-product-list">
+                                        <li>
+                                            <a href="single-product.html" class="minicart-product-image">
+                                                <img src="~/Content/assets/images/minicart/3.jpg" alt="FB's Thumbnail">
+                                                <span class="product-quantity">1x</span>
+                                            </a>
+                                            <div class="minicart-product-details">
+                                                <h6><a href="single-product.html">Printed Dress</a></h6>
+                                                <span>$23.39</span>
+                                            </div>
+                                            <button class="close" title="Remove">
+                                                <i class="fa fa-close"></i>
+                                            </button>
+                                        </li>
+                                        <li>
+                                            <a href="single-product.html" class="minicart-product-image">
+                                                <img src="~/Content/assets/images/minicart/4.jpg" alt="FB's Thumbnail">
+                                                <span class="product-quantity">1x</span>
+                                            </a>
+                                            <div class="minicart-product-details">
+                                                <h6><a href="single-product.html">Printed Chiffon Dress</a></h6>
+                                                <span>$16.40</span>
+                                            </div>
+                                            <button class="close" title="Remove">
+                                                <i class="fa fa-close"></i>
+                                            </button>
+                                        </li>
+                                    </ul>
+                                    <div class="price-content">
+                                        <p class="minicart-total">SUBTOTAL<span>$39.79</span></p>
+                                        <p class="minicart-total">Shipping<span>$7.00</span></p>
+                                        <p class="minicart-total">Taxes<span>$0.00</span></p>
+                                        <p class="minicart-total">Total<span>$46.79</span></p>
+                                    </div>
+                                    <div class="minicart-button text-center">
+                                        <a href="checkout.html" class="fb-btn">
+                                            <span>Checkout</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- Header Mini Cart Area End Here -->
+                        </ul>
+                    </div>
+                    <!-- Header Middle Right Area End Here -->
+                </div>
+                <!-- Header Middle Right Area End Here -->
+            </div>
+        </div>
+    </div>
+    <!-- Header Middle Area End Here -->
+    <!-- Begin Header Bottom Area -->
+    <div class="header-bottom bg-royal-blue header-sticky stick">
+        <div class="container">
+            <div class="row">
+                <!-- Begin Header Bottom Menu Area -->
+                <div class="col-lg-12 d-none d-lg-block d-xl-block">
+                    <!-- FB's Navigation -->
+                    <nav class="fb-navigation">
+                        <ul>
+                            <li>
+                                <a href="/">Trang chủ</a>
+                            </li>
+                            <li>
+                                <a href="~/Product">Shop</a>
+                            </li>
+                            <li>
+                                <a href="~/Blog">Blog</a>
+                            </li>
+                            <li>
+                                <a href="~/Error">Hướng dẫn sử dụng</a>
+                            </li>
+                            <li>
+                                <a href="~/Home/About">Về chúng tôi</a>
+                            </li>
+                            <li>
+                                <a href="~/Home/Contact"> Liên hệ</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <!--FB's Navigation -->
+                </div>
+                <!-- Header Bottom Menu Area End Here -->
+            </div>
+        </div>
+    </div>
+    <!-- Header Bottom Area End Here -->
+</header>

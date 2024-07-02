@@ -1,0 +1,195 @@
+﻿@model Ecommerce.Models.Category
+
+@{
+    ViewBag.Title = "Thêm mới danh mục";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="page-header">
+    <div class="container-fluid pt-4 px-4">
+        <div class="rounded h-100 p-2 header-sub-title">
+            <nav style="margin-bottom: 4px" class="breadcrumb breadcrumb-dash">
+                <a href="~/Admin/HomeAdmin" class="breadcrumb-item"><i class="fa fa-home"></i> Home</a>
+                <a href="~/Admin/AdminCategories" class="breadcrumb-item">Danh mục sản phẩm</a>
+                <span class="breadcrumb-item active">Thêm mới danh mục</span>
+            </nav>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid pt-4 px-4 col-12">
+    <div class="rounded h-100 p-4">
+        @using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken()
+
+            <ul class="nav nav-tabs" id="myTabs">
+                <li class="nav-item">
+                    <a class="nav-link active" id="main-tab" data-bs-toggle="tab" href="#mainSection">Basic info</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="additional-tab" data-bs-toggle="tab" href="#additionalSection">Option info</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="description-tab" data-bs-toggle="tab" href="#descriptionSection">Description</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="image-tab" data-bs-toggle="tab" href="#imageSection">Image</a>
+                </li>
+                <li style="margin-left: auto; margin-right: 20px">
+                    <div class="col-md-offset-2">
+                        <button type="submit" class="btn btn-outline-info" style="line-height: 28px;">
+                            <i class="fa fa-save" style="margin-right: 6px"></i>
+                            Save
+                        </button>
+                    </div>
+                </li>
+            </ul>
+
+            <div class="form-horizontal">
+                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                <div class="tab-content mt-3">
+                    <div class="tab-pane active" id="mainSection">
+                        <div class="form-group mb-4 d-flex">
+                            <label for="ProductName" class="control-label col-md-2" style="line-height: 38px;">Tên danh mục</label>
+                            <div class="col-md-10">
+                                @Html.EditorFor(model => model.CatName, new { htmlAttributes = new { @class = "form-control" } })
+                                @Html.ValidationMessageFor(model => model.CatName, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+
+                        <div class="form-group mb-4 d-flex">
+                            <label for="ShortDesc" class="control-label col-md-2" style="line-height: 38px;">Thứ tự</label>
+                            <div class="col-md-10">
+                                @Html.EditorFor(model => model.Ordering, new { htmlAttributes = new { @class = "form-control" } })
+                                @Html.ValidationMessageFor(model => model.Ordering, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+
+                        <div class="form-group mb-4 d-flex">
+                            <label for="Published" class="control-label col-md-2" style="line-height: 38px;">Public</label>
+                            <div class="col-md-10">
+                                <div class="checkbox">
+                                    @Html.EditorFor(model => model.Published)
+                                    @Html.ValidationMessageFor(model => model.Published, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="additionalSection" class="tab-pane">
+                        <div class="form-group mb-4 d-flex">
+                            <label for="Title" class="control-label col-md-2" style="line-height: 38px;">Tiêu đề</label>
+                            <div class="col-md-10">
+                                @Html.EditorFor(model => model.Title, new { htmlAttributes = new { @class = "form-control" } })
+                                @Html.ValidationMessageFor(model => model.Title, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+
+                        <div class="form-group mb-4 d-flex">
+                            <label for="Alias" class="control-label col-md-2" style="line-height: 38px;">Alias</label>
+                            <div class="col-md-10">
+                                @Html.EditorFor(model => model.Alias, new { htmlAttributes = new { @class = "form-control" } })
+                                @Html.ValidationMessageFor(model => model.Alias, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+
+                        <div class="form-group mb-4 d-flex">
+                            <label for="MetaDesc" class="control-label col-md-2" style="line-height: 38px;">Meta Desc</label>
+                            <div class="col-md-10">
+                                @Html.EditorFor(model => model.MetaDesc, new { htmlAttributes = new { @class = "form-control" } })
+                                @Html.ValidationMessageFor(model => model.MetaDesc, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+
+                        <div class="form-group mb-4 d-flex">
+                            <label for="MetaKey" class="control-label col-md-2" style="line-height: 38px;">Meta Key</label>
+                            <div class="col-md-10">
+                                @Html.EditorFor(model => model.MetaKey, new { htmlAttributes = new { @class = "form-control" } })
+                                @Html.ValidationMessageFor(model => model.MetaKey, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                        <div class="form-group mb-4 d-flex">
+                            <label for="MetaKey" class="control-label col-md-2" style="line-height: 38px;">Schema Markup</label>
+                            <div class="col-md-10">
+                                @Html.EditorFor(model => model.SchemaMarkup, new { htmlAttributes = new { @class = "form-control" } })
+                                @Html.ValidationMessageFor(model => model.SchemaMarkup, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div id="descriptionSection" class="tab-pane">
+                        <div class="form-group mb-4 d-flex justify-content-center">
+                            <div class="col-md-10">
+                                @Html.EditorFor(model => model.Description, new { htmlAttributes = new { @class = "form-control", @id = "Description" } })
+                                @Html.ValidationMessageFor(model => model.Description, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                    </div>
+                    <div id="imageSection" class="tab-pane">
+                        <div class="form-group mb-4 d-flex justify-content-center">
+                            <div class="col-md-10">
+                                @Html.EditorFor(model => model.Thumb, new { htmlAttributes = new { @class = "form-control bg-dark", @type = "file", @onchange = "displayImage(this)" } })
+                                @Html.ValidationMessageFor(model => model.Thumb, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                        <div id="imagePreview" class="d-flex justify-content-center">
+                            <!-- Nơi hiển thị hình ảnh -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+
+    </div>
+</div>
+
+<style>
+    /* Thay đổi kích thước của checkbox */
+    .checkbox input[type="checkbox"] {
+        transform: scale(1.5);
+    }
+</style>
+
+<!-- Include TinyMCE library -->
+<script src="https://cdn.tiny.cloud/1/eti2f6lgnprkg0ded5bienek85ph74230i0s35evtymjnkqy/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+
+<!-- Initialize TinyMCE -->
+<script>
+    tinymce.init({
+        selector: '#Description',  // Replace 'Description' with the actual ID of your description textarea
+        height: 300,
+        plugins: [
+            'advlist autolink lists link image charmap print preview anchor',
+            'searchreplace visualblocks code fullscreen',
+            'insertdatetime media table paste code help wordcount'
+        ],
+        toolbar: 'undo redo | formatselect | bold italic underline backcolor | \
+            alignleft aligncenter alignright alignjustify | \
+            bullist numlist outdent indent | removeformat | help'
+    });
+</script>
+
+<script>
+    function displayImage(input) {
+        var preview = document.getElementById('imagePreview');
+
+        // Xóa hình ảnh trước đó
+        while (preview.firstChild) {
+            preview.removeChild(preview.firstChild);
+        }
+
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function (e) {
+                var image = document.createElement('img');
+                image.setAttribute('src', e.target.result);
+                image.setAttribute('class', 'img-thumbnail');
+                preview.appendChild(image);
+            }
+
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+</script>

@@ -1,0 +1,56 @@
+﻿@model Ecommerce.Models.Role
+
+@{
+    ViewBag.Title = "Thêm mới quyền truy cập";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="page-header">
+    <div class="container-fluid pt-4 px-4">
+        <div class="rounded h-100 p-2 header-sub-title">
+            <nav style="margin-bottom: 4px" class="breadcrumb breadcrumb-dash">
+                <a href="~/Admin/HomeAdmin" class="breadcrumb-item"><i class="fa fa-home"></i> Home</a>
+                <a href="~/Admin/AdminRoles" class="breadcrumb-item">Danh sách quyền truy cập</a>
+                <span class="breadcrumb-item active">Thêm mới quyền truy cập</span>
+            </nav>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid pt-4 px-4 col-6">
+    <div class="rounded h-100 p-4">
+        <h6 class="mb-4">Thêm mới quyền truy cập</h6>
+        @using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken()
+
+            <div class="form-horizontal">
+                <div class="form-group">
+                    <div class="row mb-3">
+                        <label class="col-sm-4 col-form-label">Role Name</label>
+                        <div class="col-sm-8">
+                            @Html.EditorFor(model => model.RoleName, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.RoleName, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="row mb-3">
+                        <label class="col-sm-4 col-form-label">Description</label>
+                        <div class="col-sm-8">
+                            @Html.EditorFor(model => model.Description, new { htmlAttributes = new { @class = "form-control" } })
+                            @Html.ValidationMessageFor(model => model.Description, "", new { @class = "text-danger" })
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-offset-2 col-md-10">
+                        <input type="submit" value="Thêm mới" class="btn btn-primary" />
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>

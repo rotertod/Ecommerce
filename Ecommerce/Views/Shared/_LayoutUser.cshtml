@@ -1,0 +1,130 @@
+﻿<!doctype html>
+<html class="no-js" lang="zxx">
+
+<!-- Mirrored from htmldemo.net/fastbuy/fastbuy/index-2.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 27 Aug 2023 10:02:38 GMT -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>ToyFigureShops</title>
+    <meta name="robots" content="noindex, follow" />
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="~/Content/images/products/2069419.png" />
+    <!-- CSS
+    ============================================ -->
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="~/Content/assets/css/bootstrap.min.css">
+    <!-- Fontawesome CSS -->
+    <link rel="stylesheet" href="~/Content/assets/css/font-awesome.min.css">
+    <!-- Ionicons Font CSS -->
+    <link rel="stylesheet" href="~/Content/assets/css/ionicons.min.css">
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="~/Content/assets/css/plugins.css">
+    <!-- Helper CSS -->
+    <link rel="stylesheet" href="~/Content/assets/css/helper.css">
+    <!-- Main Style CSS -->
+    <link rel="stylesheet" href="~/Content/assets/css/style.css">
+    <!-- Modernizer JS -->
+    <script src="~/Content/assets/js/vendor/modernizr-3.11.2.min.js"></script>
+</head>
+<body>
+    <!--[if lt IE 8]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <!-- Begin Body Wraper Area -->
+    <div class="body-wrapper">
+        <!-- Begin Header Area -->
+        @Html.Partial("_HeaderPartialView")
+        <!-- Header Area End Here -->
+
+        @RenderBody()
+
+        <!-- Begin FB's Footer Area -->
+        @Html.Partial("_FooterPartialView")
+        <!-- FB's Footer Area End Here -->
+        <!-- Begin Fb's Quick View | Modal Area -->
+        @Html.Partial("_ModalPartialView")
+        <!-- Fb's Quick View | Modal Area End Here -->
+    </div>
+    <!-- Body Wraper Area End Here -->
+    <!-- JS
+    ============================================ -->
+    <!-- jQuery JS -->
+    <script src="~/Content/assets/js/vendor/jquery-3.6.0.min.js"></script>
+    <script src="~/Content/assets/js/vendor/jquery-migrate-3.3.2.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="~/Content/assets/js/bootstrap.bundle.min.js"></script>
+    <!-- Plugins JS -->
+    <script src="~/Content/assets/js/plugins.js"></script>
+    <!-- Main JS -->
+    <script src="~/Content/assets/js/main.js"></script>
+
+    @*Lọc danh sách sản phẩm theo danh mục*@
+    <script>
+        function filterProducts() {
+            var selectedCategoryId = $("#idcat").val();
+            var selectedCategoryText = $("#idcat option:selected").text();
+
+            // Set the content of the heading to the selected category
+            $("#selectedCategoryHeading").text(selectedCategoryText);
+
+            // You can make an AJAX call to the server to get filtered products
+            // For simplicity, I'll redirect to the Index action with the selected category parameter
+
+            if (selectedCategoryId === "0") {
+                window.location.href = '@Url.Action("Index")'; // Redirect to the default action without any category filter
+            } else {
+                window.location.href = '@Url.Action("Index")' + '?category=' + selectedCategoryId;
+            }
+        }
+    </script>
+
+
+    <script>
+    function sortProducts() {
+        var selectedSortOption = $("#sortProducts").val();
+        var selectedCategoryId = $("#idcat").val();
+
+        // You can make an AJAX call to the server to get sorted and filtered products
+        // For simplicity, I'll redirect to the Index action with the selected category and sort parameters
+
+        if (selectedCategoryId === "0") {
+            window.location.href = '@Url.Action("Index")' + '?sort=' + selectedSortOption;
+        } else {
+            window.location.href = '@Url.Action("Index")' + '?category=' + selectedCategoryId + '&sort=' + selectedSortOption;
+        }
+    }
+    </script>
+
+    <!-- Trong file _Layout.cshtml hoặc nơi khác tương tự -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+
+    <script>
+$(document).ready(function () {
+    // Hiển thị toast notification nếu có
+    toastr.options.positionClass = 'toast-top-right';
+    toastr.options.showDuration = 1000;
+    toastr.options.hideDuration = 1000;
+    toastr.options.timeOut = 5000;
+    toastr.options.extendedTimeOut = 1000;
+
+    // Kiểm tra và hiển thị thông báo thành công
+    if('@TempData["SuccessMessage"]' !== '') {
+        toastr.success('@TempData["SuccessMessage"]', 'Success');
+    }
+
+    // Kiểm tra và hiển thị thông báo thất bại
+    if('@TempData["ErrorMessage"]' !== '') {
+        toastr.error('@TempData["ErrorMessage"]', 'Error');
+    }
+});
+    </script>
+
+
+
+</body>
+
+<!-- Mirrored from htmldemo.net/fastbuy/fastbuy/index-2.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 27 Aug 2023 10:02:46 GMT -->
+</html>

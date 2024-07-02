@@ -1,0 +1,89 @@
+﻿@model IEnumerable<Ecommerce.Models.Account>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="page-header">
+    <div class="container-fluid pt-4 px-4">
+        <div class="rounded h-100 p-2 header-sub-title">
+            <nav style="margin-bottom: 4px" class="breadcrumb breadcrumb-dash">
+                <a href="~/Admin/HomeAdmin" class="breadcrumb-item"><i class="fa fa-home"></i> Home</a>
+                <span class="breadcrumb-item active">Danh sách tài khoản</span>
+            </nav>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid pt-4 px-4">
+    <div class="col-12">
+        <div class="rounded h-100 p-4">
+            <div class="d-md-flex mb-4 align-items-center">
+                <h6 style="margin: 0">Danh sách tài khoản</h6>
+                <a href="~/Admin/AdminAccounts/Create" class="btn btn-outline-info" style="line-height: 28px; margin-left: auto">
+                    <span style="margin-right: 6px; font-size: 20px;">+</span>
+                    Create
+                </a>
+            </div>
+            <div class="table-responsive">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col" style="width: 5%">ID</th>
+                            <th style="width: 18%">Họ và tên</th>
+                            <th style="width: 17%">Email</th>
+                            <th style="width: 13%">Điện thoại</th>
+                            <th style="width: 15%">Quyền truy cập</th>
+                            <th>Trạng thái</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody style="vertical-align: middle">
+                        @if (Model != null)
+                        {
+                            foreach (var item in Model)
+                            {
+                                <tr>
+                                    <th scope="row">@item.AccountID</th>
+                                    <td>@item.FullName</td>
+                                    <td>@item.Email</td>
+                                    <td>@item.Phone</td>
+                                    <td>@item.Role.Description</td>
+
+                                    <td>
+                                        @if (item.Active)
+                                        {
+                                            <div class="d-flex align-items-center">
+                                                <div class="w-[4px] h-[4px] bg-success rounded-circle"></div>
+                                                <div>Active</div>
+                                            </div>
+                                        }
+                                        else
+                                        {
+                                            <div class="d-flex align-items-center">
+                                                <div class="w-[4px] h-[4px] bg-danger rounded-circle"></div>
+                                                <div>Block</div>
+                                            </div>
+                                        }
+                                    </td>
+
+                                    <td>
+                                        <a class="btn btn-outline-success m-2" href="~/Admin/AdminAccounts/Details/@item.AccountID">View</a>
+                                        <a class="btn btn-outline-warning m-2" href="~/Admin/AdminAccounts/Edit/@item.AccountID">Edit</a>
+                                        <a class="btn btn-outline-danger m-2" href="~/Admin/AdminAccounts/Delete/@item.AccountID">Delete</a>
+                                    </td>
+                                </tr>
+                            }
+                        }
+
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+

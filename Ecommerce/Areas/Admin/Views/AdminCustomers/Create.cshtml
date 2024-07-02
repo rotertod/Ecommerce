@@ -1,0 +1,164 @@
+﻿@model Ecommerce.Models.Customer
+
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="page-header">
+    <div class="container-fluid pt-4 px-4">
+        <div class="rounded h-100 p-2 header-sub-title">
+            <nav style="margin-bottom: 4px" class="breadcrumb breadcrumb-dash">
+                <a href="~/Admin/HomeAdmin" class="breadcrumb-item"><i class="fa fa-home"></i> Home</a>
+                <a href="~/Admin/AdminCustomers" class="breadcrumb-item">Danh sách khách hàng</a>
+                <span class="breadcrumb-item active">Thêm mới khách hàng</span>
+            </nav>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid pt-4 px-4 col-12">
+    <div class="rounded h-100 p-4">
+        @using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken()
+
+            <ul class="nav nav-tabs" id="myTabs">
+                <li class="nav-item">
+                    <a class="nav-link active" id="personal-tab" data-bs-toggle="tab" href="#personalSection">Personal Info</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="login-tab" data-bs-toggle="tab" href="#loginSection">Login Info</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="avatar-tab" data-bs-toggle="tab" href="#avatarSection">Avatar</a>
+                </li>
+                <li style="margin-left: auto; margin-right: 20px">
+                    <div class="col-md-offset-2">
+                        <button type="submit" class="btn btn-outline-info" style="line-height: 28px;">
+                            <i class="fa fa-save" style="margin-right: 6px"></i>
+                            Save
+                        </button>
+                    </div>
+                </li>
+            </ul>
+
+            <div class="form-horizontal">
+                @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                <div class="tab-content mt-3">
+                    <div class="tab-pane active" id="personalSection">
+                        <div class="form-group mb-4 d-flex">
+                            <label for="FullName" class="control-label col-md-2" style="line-height: 38px;">Họ tên khách hàng</label>
+                            <div class="col-md-10">
+                                @Html.EditorFor(model => model.FullName, new { htmlAttributes = new { @class = "form-control" } })
+                                @Html.ValidationMessageFor(model => model.FullName, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+
+                        <div class="form-group mb-4 d-flex">
+                            <label for="Birthday" class="control-label col-md-2" style="line-height: 38px;">Ngày sinh</label>
+                            <div class="col-md-10">
+                                @Html.TextBoxFor(model => model.Birthday, "{0:yyyy-MM-dd}", new { @class = "form-control", @type = "date" })
+                                @Html.ValidationMessageFor(model => model.Birthday, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+
+                        <div class="form-group mb-4 d-flex">
+                            <label for="Address" class="control-label col-md-2" style="line-height: 38px;">Địa chỉ</label>
+                            <div class="col-md-10">
+                                @Html.EditorFor(model => model.Address, new { htmlAttributes = new { @class = "form-control" } })
+                                @Html.ValidationMessageFor(model => model.Address, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+
+                        <div class="form-group mb-4 d-flex">
+                            <label for="Phone" class="control-label col-md-2" style="line-height: 38px;">Số điện thoại</label>
+                            <div class="col-md-10">
+                                @Html.EditorFor(model => model.Phone, new { htmlAttributes = new { @class = "form-control" } })
+                                @Html.ValidationMessageFor(model => model.Phone, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+
+                        <div class="form-group mb-4 d-flex">
+                            <label for="LocationID" class="control-label col-md-2" style="line-height: 38px;">Tỉnh/thành</label>
+                            <div class="col-md-10">
+                                @Html.DropDownList("LocationID", null, htmlAttributes: new { @class = "form-control bg-dark" })
+                                @Html.ValidationMessageFor(model => model.LocationID, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                    </div>
+                    <div id="loginSection" class="tab-pane">
+                        <div class="form-group mb-4 d-flex">
+                            <label for="Title" class="control-label col-md-2" style="line-height: 38px;">Email</label>
+                            <div class="col-md-10">
+                                @Html.EditorFor(model => model.Email, new { htmlAttributes = new { @class = "form-control", @type = "email" } })
+                                @Html.ValidationMessageFor(model => model.Email, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+
+                        <div class="form-group mb-4 d-flex">
+                            <label for="Title" class="control-label col-md-2" style="line-height: 38px;">Password</label>
+                            <div class="col-md-10">
+                                @Html.EditorFor(model => model.Password, new { htmlAttributes = new { @class = "form-control", @type = "password" } })
+                                @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+
+                        <div class="form-group mb-4 d-flex">
+                            <label for="Published" class="control-label col-md-2" style="line-height: 38px;">Active</label>
+                            <div class="col-md-10" style="line-height: 38px;">
+                                <div class="checkbox">
+                                    @Html.EditorFor(model => model.Active)
+                                    @Html.ValidationMessageFor(model => model.Active, "", new { @class = "text-danger" })
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="avatarSection" class="tab-pane">
+                        <div class="form-group mb-4 d-flex justify-content-center">
+                            <div class="col-md-10">
+                                @Html.EditorFor(model => model.Avatar, new { htmlAttributes = new { @class = "form-control bg-dark", @type = "file", @onchange = "displayImage(this)" } })
+                                @Html.ValidationMessageFor(model => model.Avatar, "", new { @class = "text-danger" })
+                            </div>
+                        </div>
+                        <div id="imagePreview" class="d-flex justify-content-center">
+                            <!-- Nơi hiển thị hình ảnh -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+
+    </div>
+</div>
+
+<style>
+    /* Thay đổi kích thước của checkbox */
+    .checkbox input[type="checkbox"] {
+        transform: scale(1.5);
+    }
+</style>
+
+<script>
+    function displayImage(input) {
+        var preview = document.getElementById('imagePreview');
+
+        // Xóa hình ảnh trước đó
+        while (preview.firstChild) {
+            preview.removeChild(preview.firstChild);
+        }
+
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function (e) {
+                var image = document.createElement('img');
+                image.setAttribute('src', e.target.result);
+                image.setAttribute('class', 'img-thumbnail');
+                preview.appendChild(image);
+            }
+
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+</script>

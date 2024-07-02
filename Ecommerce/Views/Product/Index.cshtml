@@ -1,0 +1,281 @@
+﻿@model PagedList.IPagedList<Ecommerce.Models.Product>
+@using PagedList.Mvc;
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutUser.cshtml";
+}
+
+<!-- Begin FB's Breadcrumb Area -->
+<div class="breadcrumb-area pt-30 pb-30">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="breadcrumb-content">
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li class="active">Shop</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- FB's Breadcrumb Area End Here -->
+<!-- Begin FB's Content Wraper Area -->
+<div class="content-wraper">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <!-- Begin FB's Banner Area -->
+                <div class="shoptopbar-heading">
+                    <h2 id="selectedCategoryHeading"></h2>
+                </div>
+                <!-- FB's Banner Area End Here -->
+                <!-- shop-top-bar start -->
+                <div class="shop-top-bar mt-25">
+                    <div class="shop-bar-inner">
+                        <div class="product-view-mode">
+                            <!-- shop-item-filter-list start -->
+                            <ul class="nav shop-item-filter-list" role="tablist">
+                                <li class="active" role="presentation">
+                                    <a aria-selected="true"
+                                       class="active show" data-bs-toggle="tab" role="tab"
+                                       aria-controls="grid-view" href="#grid-view" style="cursor: pointer"><i class="fa fa-th"></i></a>
+                                </li>
+                                <li role="presentation">
+                                    <a data-bs-toggle="tab" role="tab"
+                                       aria-controls="list-view" href="#list-view" style="cursor: pointer">
+                                        <i class="fa fa-th-list"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                            <!-- shop-item-filter-list end -->
+                        </div>
+                    </div>
+                    <!-- product-select-box start -->
+                    <div class="product-select-box">
+                        <div class="product-short">
+                            <p>Sort By:</p>
+                            <select class="nice-select" id="sortProducts" onchange="sortProducts()">
+                                <option value="NameAZ">Name (A - Z)</option>
+                                <option value="NameZA">Name (Z - A)</option>
+                                <option value="Low">Price (Low &gt; High)</option>
+                                <option value="High">Price (High &gt; Low)</option>
+                            </select>
+                            <div style="margin-left: 24px">
+                                @{
+                                    var danhMucList = ViewData["DanhMuc"] as SelectList;
+                                }
+                                <select id="idcat" name="idcat" class="nice-select" onchange="filterProducts()">
+                                    <option value="0" @(ViewBag.SelectedCategory == null || ViewBag.SelectedCategory == 0 ? "selected" : "")>All</option>
+                                    @foreach (var item in danhMucList)
+                                    {
+                                        <option value="@item.Value" @Html.Raw(item.Value == ViewBag.SelectedCategory ? "selected" : "")>@item.Text</option>
+                                    }
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- product-select-box end -->
+                </div>
+                <!-- shop-top-bar end -->
+                <!-- shop-products-wrapper start -->
+                <div class="shop-products-wrapper bg-white mt-30 pb-60 pb-sm-30">
+                    <div class="tab-content">
+                        <div id="grid-view" class="tab-pane fade active show" role="tabpanel">
+                            <div class="fb-product_wrap shop-product-area">
+                                <div class="row">
+                                    @if (Model != null && Model.Count() > 0)
+                                    {
+                                        foreach (var item in Model)
+                                        {
+                                            <div class="col-lg-4 col-md-4 col-sm-6">
+                                                <!-- Begin Sigle Product Area -->
+                                                <div class="single-product">
+                                                    <!-- Begin Product Image Area -->
+                                                    <div class="product-img">
+                                                        <a href="~/Product/Details/@item.ProductID">
+                                                            <img style="object-fit: contain; max-height: 320px; width: 100%; min-height: 320px; cursor: pointer" class="primary-img" src="~/Content/images/products/@item.Thumb"
+                                                                 alt="@item.ProductName">
+                                                        </a>
+                                                        <div class="sticker"><span>New</span></div>
+                                                    </div>
+                                                    <!-- Product Image Area End Here -->
+                                                    <!-- Begin Product Content Area -->
+                                                    <div class="product-content">
+                                                        <h2 class="product-name">
+                                                            <a href="~/Product/Details/@item.ProductID">@item.ProductName</a>
+                                                        </h2>
+                                                        <div class="rating-box">
+                                                            <ul class="rating">
+                                                                @if (item.Ratting == 0 || item.Ratting == null)
+                                                                {
+                                                                    <li class="no-star"><i class="fa fa-star"></i></li>
+                                                                    <li class="no-star"><i class="fa fa-star"></i></li>
+                                                                    <li class="no-star"><i class="fa fa-star"></i></li>
+                                                                    <li class="no-star"><i class="fa fa-star"></i></li>
+                                                                    <li class="no-star"><i class="fa fa-star"></i></li>
+                                                                }
+                                                                else if (item.Ratting == 1)
+                                                                {
+                                                                    <li><i class="fa fa-star"></i></li>
+                                                                    <li class="no-star"><i class="fa fa-star"></i></li>
+                                                                    <li class="no-star"><i class="fa fa-star"></i></li>
+                                                                    <li class="no-star"><i class="fa fa-star"></i></li>
+                                                                    <li class="no-star"><i class="fa fa-star"></i></li>
+                                                                }
+                                                                else if (item.Ratting == 2)
+                                                                {
+                                                                    <li><i class="fa fa-star"></i></li>
+                                                                    <li><i class="fa fa-star"></i></li>
+                                                                    <li class="no-star"><i class="fa fa-star"></i></li>
+                                                                    <li class="no-star"><i class="fa fa-star"></i></li>
+                                                                    <li class="no-star"><i class="fa fa-star"></i></li>
+                                                                }
+                                                                else if (item.Ratting == 3)
+                                                                {
+                                                                    <li><i class="fa fa-star"></i></li>
+                                                                    <li><i class="fa fa-star"></i></li>
+                                                                    <li><i class="fa fa-star"></i></li>
+                                                                    <li class="no-star"><i class="fa fa-star"></i></li>
+                                                                    <li class="no-star"><i class="fa fa-star"></i></li>
+                                                                }
+                                                                else if (item.Ratting == 4)
+                                                                {
+                                                                    <li><i class="fa fa-star"></i></li>
+                                                                    <li><i class="fa fa-star"></i></li>
+                                                                    <li><i class="fa fa-star"></i></li>
+                                                                    <li><i class="fa fa-star"></i></li>
+                                                                    <li class="no-star"><i class="fa fa-star"></i></li>
+                                                                }
+                                                                else if (item.Ratting == 5)
+                                                                {
+                                                                    <li><i class="fa fa-star"></i></li>
+                                                                    <li><i class="fa fa-star"></i></li>
+                                                                    <li><i class="fa fa-star"></i></li>
+                                                                    <li><i class="fa fa-star"></i></li>
+                                                                    <li><i class="fa fa-star"></i></li>
+                                                                }
+                                                            </ul>
+                                                        </div>
+                                                        <div class="price-box">
+                                                            <span class="new-price">$@item.Price</span>
+                                                        </div>
+                                                    </div>
+                                                    <!-- Product Content Area End Here -->
+                                                </div>
+                                                <!-- Sigle Product Area End Here -->
+                                            </div>
+                                        }
+                                    }
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="list-view" class="tab-pane fade product-list-view" role="tabpanel">
+                            <div class="fb-product_wrap shop-product-area">
+                                @if (Model != null && Model.Count() > 0)
+                                {
+                                    foreach (var item in Model)
+                                    {
+                                        <div class="row">
+                                            <div class="col-lg-4 col-md-4 col-sm-6">
+                                                <!-- Begin Sigle Product Area -->
+                                                <div class="single-product">
+                                                    <!-- Begin Product Image Area -->
+                                                    <div class="product-img">
+                                                        <a href="~/Product/Details/@item.ProductID">
+                                                            <img class="primary-img" src="~/Content/images/products/@item.Thumb" alt="@item.ProductName" style="cursor: pointer">
+                                                        </a>
+                                                        <div class="sticker"><span>New</span></div>
+                                                    </div>
+                                                    <!-- Product Image Area End Here -->
+                                                </div>
+                                                <!-- Sigle Product Area End Here -->
+                                            </div>
+                                            <div class="col-lg-8 col-md-8 col-sm-6">
+                                                <!-- Begin Product Content Area -->
+                                                <div class="product-content product-content-list_view">
+                                                    <h2 class="product-name">
+                                                        <a href="~/Product/Details/@item.ProductID">@item.ProductName</a>
+                                                    </h2>
+                                                    <div class="rating-box">
+                                                        <ul class="rating">
+                                                            <li class="no-star"><i class="fa fa-star"></i></li>
+                                                            <li class="no-star"><i class="fa fa-star"></i></li>
+                                                            <li class="no-star"><i class="fa fa-star"></i></li>
+                                                            <li class="no-star"><i class="fa fa-star"></i></li>
+                                                            <li class="no-star"><i class="fa fa-star"></i></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="price-box">
+                                                        <span class="new-price">@item.Price</span>
+                                                    </div>
+                                                    <p>
+                                                        @item.ShortDesc
+                                                    </p>
+                                                    <div class="product-action">
+                                                        <ul class="product-action-link">
+                                                            <li class="shopping-cart_link">
+                                                                <a href="cart.html" title="Shopping Cart"><i class="ion-bag"></i></a>
+                                                            </li>
+                                                            <li class="quick-view-btn"><a href="#" title="Quick View" data-bs-toggle="modal" data-bs-target="#exampleModalCenter"><i class="ion-eye"></i></a></li>
+                                                            <li class="single-product_link">
+                                                                <a href="~/Product/Details/@item.ProductID" title="Single Product"><i class="ion-link"></i></a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <!-- Product Content Area End Here -->
+                                            </div>
+                                        </div>
+                                    }
+                                }
+
+
+                            </div>
+                        </div>
+                        <!-- Begin FB's Pagination Area -->
+                        <div class="col-lg-12">
+                            <div class="fb-paginatoin-area text-center pt-10">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        @if (Model.PageCount > 1)
+                                        {
+                                            <div class="btn-toolbar justify-content-center" role="toolbar">
+                                                @if (Model.HasPreviousPage)
+                                                {
+                                                    <div class="btn-group me-2" role="group" aria-label="Third group">
+                                                        <a class="btn btn-outline-secondary" href="@Url.Action("Index", new { page = Model.PageNumber - 1 })"><</a>
+                                                    </div>
+                                                }
+
+                                                @for (int i = 1; i <= Model.PageCount; i++)
+                                                {
+                                                    <div class="btn-group me-2" role="group" aria-label="First group">
+                                                        <a class="btn @(Model.PageNumber == i ? "btn-primary" : "btn-outline-secondary")" href="@Url.Action("Index", new { page = i })">@i</a>
+                                                    </div>
+                                                }
+
+                                                @if (Model.HasNextPage)
+                                                {
+                                                    <div class="btn-group me-2" role="group" aria-label="Third group">
+                                                        <a class="btn btn-outline-secondary" href="@Url.Action("Index", new { page = Model.PageNumber + 1 })">></a>
+                                                    </div>
+                                                }
+                                            </div>
+                                        }
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- FB's Pagination End Here Area -->
+                    </div>
+                </div>
+                <!-- shop-products-wrapper end -->
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Content Wraper Area End Here -->

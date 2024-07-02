@@ -1,0 +1,172 @@
+﻿@model Ecommerce.Models.Account
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="page-header">
+    <div class="container-fluid pt-4 px-4">
+        <div class="rounded h-100 p-2 header-sub-title">
+            <nav style="margin-bottom: 4px" class="breadcrumb breadcrumb-dash">
+                <a href="~/Admin/HomeAdmin" class="breadcrumb-item"><i class="fa fa-home"></i> Home</a>
+                <a href="~/Admin/AdminAccounts" class="breadcrumb-item">Danh sách tài khoản</a>
+                <span class="breadcrumb-item active">Thông tin tài khoản: @Model.FullName</span>
+            </nav>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid pt-4 px-4 col-9">
+    <div class="rounded h-100 p-4">
+        <ul class="nav nav-tabs" id="myTabs">
+            <li class="nav-item">
+                <a class="nav-link active" id="info-tab" data-bs-toggle="tab" href="#infoSection">Info</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="image-tab" data-bs-toggle="tab" href="#imageSection">Image</a>
+            </li>
+            <li style="margin-left: auto; margin-right: 20px">
+                <div class="col-md-offset-2">
+                    @using (Html.BeginForm())
+                    {
+                        @Html.AntiForgeryToken()
+
+                        <div class="form-actions no-color">
+                            <input type="submit" value="Delete" class="btn btn-primary" />
+                        </div>
+                    }
+                </div>
+            </li>
+        </ul>
+        <div>
+            <div class="tab-content mt-3">
+                <div class="tab-pane active" id="infoSection">
+                    <div class="table-responsive">
+                        <table class="table">
+                            <tbody style="vertical-align: middle">
+                                <tr>
+                                    <td>ID:</td>
+                                    <td>@Model.AccountID</td>
+                                </tr>
+                                <tr>
+                                    <td>Họ và tên:</td>
+                                    <td>@Model.FullName</td>
+                                </tr>
+                                <tr>
+                                    <td>Email:</td>
+                                    <td>@Model.Email</td>
+                                </tr>
+                                <tr>
+                                    <td>Password:</td>
+                                    <td>@Model.Password</td>
+                                </tr>
+                                <tr>
+                                    <td>Trạng thái:</td>
+                                    <td>
+                                        @if (Model.Active == true)
+                                        {
+                                            <span>Active</span>
+                                        }
+                                        else
+                                        {
+                                            <span>Block</span>
+                                        }
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Số điện thoại:</td>
+                                    <td>@Model.Phone</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="tab-pane text-center" id="imageSection">
+                    <img width="500" height="500" style="object-fit: contain" src="~/Content/images/accounts/@Model.Avatar" alt="@Model.FullName" />
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<style>
+    thead, tbody, tfoot, tr {
+        line-height: 40px;
+    }
+
+        thead, tbody, tfoot, tr td {
+            width: 50%;
+        }
+</style>
+
+<style>
+    /* Customize the label (the container) */
+    .container {
+        display: block;
+        position: relative;
+        padding-left: 35px;
+        margin-bottom: 12px;
+        cursor: pointer;
+        font-size: 22px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+
+        /* Hide the browser's default checkbox */
+        .container input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+            height: 0;
+            width: 0;
+        }
+
+    /* Create a custom checkbox */
+    .checkmark {
+        position: absolute;
+        top: -5px;
+        left: 0;
+        height: 25px;
+        width: 25px;
+        background-color: #eee;
+    }
+
+    /* On mouse-over, add a grey background color */
+    .container:hover input ~ .checkmark {
+        background-color: #ccc;
+    }
+
+    /* When the checkbox is checked, add a blue background */
+    .container input:checked ~ .checkmark {
+        background-color: #EB1616;
+    }
+
+    /* Create the checkmark/indicator (hidden when not checked) */
+    .checkmark:after {
+        content: "";
+        position: absolute;
+        display: none;
+    }
+
+    /* Show the checkmark when checked */
+    .container input:checked ~ .checkmark:after {
+        display: block;
+    }
+
+    /* Style the checkmark/indicator */
+    .container .checkmark:after {
+        left: 9px;
+        top: 3px;
+        width: 8px;
+        height: 15px;
+        border: solid white;
+        border-width: 0 3px 3px 0;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+</style>

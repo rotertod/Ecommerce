@@ -1,0 +1,201 @@
+﻿@model Ecommerce.Models.Customer
+
+@{
+    ViewBag.Title = "MyProfile";
+    Layout = "~/Views/Shared/_LayoutUser.cshtml";
+}
+
+<!-- Begin FB's Breadcrumb Area -->
+<div class="breadcrumb-area pt-30">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12" style="cursor: default">
+                <div class="breadcrumb-content">
+                    <ul>
+                        <li><a href="/">Trang chủ</a></li>
+                        <li class="active">Thông tin tài khoản</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- FB's Breadcrumb Area End Here -->
+
+<div class="page-section pt-60 pb-60">
+    <div class="container">
+        <ul class="nav nav-tabs" id="myTabs" style="cursor: default; font-size: 16px">
+            <li class="nav-item">
+                <a class="nav-link active" id="personal-tab" data-bs-toggle="tab" href="#personalSection">Personal Info</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="login-tab" data-bs-toggle="tab" href="#loginSection">Login Info</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="avatar-tab" data-bs-toggle="tab" href="#avatarSection">Avatar</a>
+            </li>
+            <li class="nav-item" style="margin-left: auto">
+                <a class="btn btn-primary" href="~/Account/EditProfile/@Model.CustomerID">Edit</a>
+            </li>
+        </ul>
+        <div>
+            <div class="tab-content mt-3" style="cursor: default; font-size: 16px">
+                <div class="tab-pane active" id="personalSection">
+                    <div class="table-responsive">
+                        <table class="table">
+                            <tbody style="vertical-align: middle">
+                                <tr>
+                                    <td>ID:</td>
+                                    <td>@Model.CustomerID</td>
+                                </tr>
+                                <tr>
+                                    <td>Họ và tên khách hàng:</td>
+                                    <td>@Model.FullName</td>
+                                </tr>
+                                <tr>
+                                    <td>Ngày sinh:</td>
+                                    <td>@Model.Birthday.Value.ToShortDateString()</td>
+                                </tr>
+                                <tr>
+                                    <td>Địa chỉ:</td>
+                                    <td>@Model.Address</td>
+                                </tr>
+                                <tr>
+                                    <td>Số điện thoại:</td>
+                                    <td>@Model.Phone</td>
+                                </tr>
+                                <tr>
+                                    <td>Tỉnh/thành:</td>
+                                    <td>@Model.Location.Name</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="tab-pane" id="loginSection">
+                    <div class="table-responsive">
+                        <table class="table">
+                            <tbody style="vertical-align: middle">
+                                <tr>
+                                    <td>Email:</td>
+                                    <td>@Model.Email</td>
+                                </tr>
+                                <tr>
+                                    <td>Password</td>
+                                    <td>@Model.Password</td>
+                                </tr>
+                                <tr>
+                                    <td>Trạng thái:</td>
+                                    <td>
+                                        @if (Model.Active == true)
+                                        {
+                                            <span>Online</span>
+                                        }
+                                        else
+                                        {
+                                            <span>Offline</span>
+                                        }
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Ngày tạo:</td>
+                                    <td>@Model.CreateDate</td>
+                                </tr>
+                                <tr>
+                                    <td>Lần đăng nhập cuối:</td>
+                                    <td>@Model.LastLogin</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="tab-pane" id="avatarSection">
+                    <img style="object-fit: cover; width: 100%" src="~/Content/images/customers/@Model.Avatar" alt="@Model.FullName" />
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<style>
+    thead, tbody, tfoot, tr {
+        line-height: 40px;
+    }
+
+        thead, tbody, tfoot, tr td {
+            width: 50%;
+        }
+</style>
+
+<style>
+    /* Customize the label (the container) */
+    .container {
+        display: block;
+        position: relative;
+        padding-left: 35px;
+        margin-bottom: 12px;
+        cursor: pointer;
+        font-size: 22px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+
+        /* Hide the browser's default checkbox */
+        .container input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+            height: 0;
+            width: 0;
+        }
+
+    /* Create a custom checkbox */
+    .checkmark {
+        position: absolute;
+        top: -5px;
+        left: 0;
+        height: 25px;
+        width: 25px;
+        background-color: #eee;
+    }
+
+    /* On mouse-over, add a grey background color */
+    .container:hover input ~ .checkmark {
+        background-color: #ccc;
+    }
+
+    /* When the checkbox is checked, add a blue background */
+    .container input:checked ~ .checkmark {
+        background-color: #EB1616;
+    }
+
+    /* Create the checkmark/indicator (hidden when not checked) */
+    .checkmark:after {
+        content: "";
+        position: absolute;
+        display: none;
+    }
+
+    /* Show the checkmark when checked */
+    .container input:checked ~ .checkmark:after {
+        display: block;
+    }
+
+    /* Style the checkmark/indicator */
+    .container .checkmark:after {
+        left: 9px;
+        top: 3px;
+        width: 8px;
+        height: 15px;
+        border: solid white;
+        border-width: 0 3px 3px 0;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+</style>
+
+

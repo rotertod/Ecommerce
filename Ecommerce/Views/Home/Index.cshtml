@@ -1,0 +1,625 @@
+﻿<!-- Begin Slider With Banner Area -->
+<div class="slider-with-banner slider-with-category-menu pt-30">
+    <div class="container">
+        <div class="row">
+            <!-- Begin Category Menu Area -->
+            <div class="col-xl-3 col-lg-4">
+                <!--Category Menu Start-->
+                <div class="category-menu">
+                    <div class="category-heading">
+                        <h2 class="categories-toggle"><span>All Categories</span></h2>
+                    </div>
+                    <div id="cate-toggle" class="category-menu-list">
+                        @{
+                            var danhMucList = ViewData["DanhMuc"] as SelectList;
+                        }
+                        <ul style="height: 448px; background: #fff">
+                            @foreach (var item in danhMucList)
+                            {
+                                // Check if item.Value is not null before accessing it
+                                if (!string.IsNullOrEmpty(item.Value))
+                                {
+                                    // Combine the value with the file extension
+                                    var imagePath = $"~/Content/assets/images/category-thumbs/{item.Value}.jpg";
+
+                                    <li><a href="~/Product?category=@item.Value"><span><img src="@Url.Content(imagePath)" alt=""></span> @item.Text</a></li>
+                                }
+                            }
+                        </ul>
+                    </div>
+                </div>
+                <!--Category Menu End-->
+            </div>
+            <!-- Category Menu Area End Here -->
+            <!-- Begin Slider Area -->
+            <div class="col-xl-9 col-lg-8">
+                <div class="slider-area slider-area-2 pt-sm-30 pt-xs-30">
+                    <div class="slider-active owl-carousel">
+                        <!-- Begin Single Slide Area -->
+                        <div class="single-slide align-center-left  animation-style-01">
+                            <img src="https://onepiecefigure.com/wp-content/uploads/2022/09/One-Piece-Store-Web-Banner-1920x950px.jpg" alt="Alternate Text" />
+                            <div class="slider-progress"></div>
+                            <div class="slider-content">
+                                <h2>Ngày Black Friday</h2>
+                                <h3>Giảm giá 30%</h3>
+                                <h5>Toàn bộ Figure</h5>
+                                <div class="default-btn slide-btn">
+                                    <a class="fb-links fb-links-round" href="shop.html">Mua ngay</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Single Slide Area End Here -->
+                        <!-- Begin Single Slide Area -->
+                        <div class="single-slide align-center-left animation-style-02 ">
+                            <img src="https://shiphangnhatviet.com/wp-content/uploads/2019/03/Mua-m%C3%B4-h%C3%ACnh-nh%C3%A2n-v%E1%BA%ADt-Once-Piece-tr%C3%AAn-Mercari.png" alt="Alternate Text" />
+                            <div class="slider-progress"></div>
+                            <div class="slider-content">
+                                <h2>Giảm giá mạnh</h2>
+                                <h3>Lên tới 50%</h3>
+                                <h5>Sản phẩm trên cửa hàng</h5>
+                                <div class="default-btn slide-btn">
+                                    <a class="fb-links fb-links-round" href="shop-left-sidebar.html">Mua ngay</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Single Slide Area End Here -->
+                    </div>
+                </div>
+            </div>
+            <!-- Slider Area End Here -->
+        </div>
+    </div>
+</div>
+<!-- Slider With Banner Area End Here -->
+<!-- Begin FB's Product With Banner Area -->
+<div class="fb-product_with_banner fb-featured-pro_with_banner pt-60 pb-60">
+    <div class="container">
+        <div class="fb-section_title-2">
+            <h2>Sản phẩm nổi bật</h2>
+        </div>
+        <div class="row no-gutters">
+            <!-- Begin FB's Banner Area -->
+            <div class="col-xl-3 col-lg-4 col-md-5">
+                <div class="fb-banner fb-img-hover-effect" style="height: 100%">
+                    <a href="~/Product" style="height: 100%">
+                     
+                        <img src="~/Content/images/products/OP4.jpg" alt="FB'S Banner" style="object-fit: cover; height: 100%">
+                    </a>
+                </div>
+            </div>
+            <!-- FB's Banner Area End Here -->
+            <!-- Begin FB's Product Wrap Area -->
+            <div class="col-xl-9 col-lg-8 col-md-7">
+                <div class="fb-product_wrap bg-white">
+                    <div class="fb-product_active owl-carousel">
+                        @foreach (var product in ViewData["SanPham5Sao"] as List<Ecommerce.Models.Product>)
+                        {
+                            <!-- Begin Sigle Product Area -->
+                            <div class="single-product">
+                                <!-- Begin Product Image Area -->
+                                <div class="product-img">
+                                    <a href="~/Product/Details/@product.ProductID">
+                                        <img class="primary-img" src="~/Content/images/products/@product.Thumb" alt="@product.ProductName" style="min-height: 250px; object-fit: contain; cursor: pointer">
+                                    </a>
+                                    <div class="sticker"><span>New</span></div>
+                                </div>
+                                <!-- Product Image Area End Here -->
+                                <!-- Begin Product Content Area -->
+                                <div class="product-content">
+                                    <h2 class="product-name">
+                                        <a href="~/Product/Details/@product.ProductID">@product.ProductName</a>
+                                    </h2>
+                                    <div class="rating-box">
+                                        <ul class="rating">
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                            <li><i class="fa fa-star"></i></li>
+                                        </ul>
+                                    </div>
+                                    <div class="price-box-2">
+                                        <span class="new-price">$@product.Price</span>
+                                    </div>
+                                </div>
+                                <!-- Product Content Area End Here -->
+                            </div>
+                            <!-- Sigle Product Area End Here -->
+                        }
+
+                    </div>
+                </div>
+            </div>
+            <!-- FB's Product Wrap Area End Here -->
+        </div>
+    </div>
+</div>
+<!-- FB's Product Area End Here -->
+<!-- Begin FB's Banner Wrap Two Area -->
+<div class="fb-banner_wrap fb-banner_wrap-2">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="row">
+                    <!-- Begin FB's Banner Area -->
+                    <div class="col-lg-6 col-md-6" style="margin: 10px 0">
+                        <div class="fb-banner fb-img-hover-effect pb-sm-30 pb-xs-30" style="height: 100%">
+                            <a href="~/Product" style="height: 100%">
+                                <img style="object-fit: contain; height: 100%" src="~/Content/images/products/2373f9f099131000c47791e3b456699f.jpg" alt="FB'S Banner">
+                            </a>
+                        </div>
+                    </div>
+                    <!-- FB's Banner Area End Here -->
+                    <!-- Begin FB's Banner Area -->
+                    <div class="col-lg-6 col-md-6">
+                        <div class="fb-banner fb-img-hover-effect pb-sm-30 pb-xs-30" style="height: 100%">
+                            <a href="~/Product" style="height: 100%">
+                                <img style="object-fit: contain; height: 100%" src="~/Content/images/products/b6be361eb5ce39282b9b0b5533ef18b4.jpg" alt="FB'S Banner">
+                            </a>
+                        </div>
+                    </div>
+                    <!-- FB's Banner Area End Here -->
+                    <!-- Begin FB's Banner Area -->
+                    <div class="col-lg-6 col-md-6">
+                        <div class="fb-banner fb-img-hover-effect pb-sm-30 pb-xs-30" style="height: 100%">
+                            <a href="~/Product" style="height: 100%">
+                                <img style="object-fit: contain; height: 100%" src="~/Content/images/products/Hires Gundam Astray Red Frame.jpg" alt="FB'S Banner">
+                            </a>
+                        </div>
+                    </div>
+                    <!-- FB's Banner Area End Here -->
+                    <!-- Begin FB's Banner Area -->
+                    <div class="col-lg-6 col-md-6">
+                        <div class="fb-banner fb-img-hover-effect pb-sm-30 pb-xs-30" style="height: 100%">
+                            <a href="~/Product" style="height: 100%">
+                                <img style="object-fit: contain; height: 100%" src="~/Content/images/products/1.jpg" alt="FB'S Banner">
+                            </a>
+                        </div>
+                    </div>
+                    <!-- FB's Banner Area End Here -->
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <!-- Begin FB's Banner Area -->
+                <div class="fb-banner fb-img-hover-effect pt-xs-30" style="height: 100%; padding-top: 10px;">
+                    <a href="~/Product" style="height: 100%">
+                        <img style="height: 100%" src="~/Content/images/products/d7cf0dec1a94bfa32590080429a08bea.jpg_720x720q80.jpg" alt="FB'S Banner">
+                    </a>
+                </div>
+                <!-- FB's Banner Area End Here -->
+            </div>
+        </div>
+    </div>
+</div>
+<!-- FB's Banner Wrap Two Area End Here -->
+<!-- Begin FB's Banner With New Product Two Area -->
+<div class="fb-banner_with-new_product fb-banner_with-new_product-2 pt-60">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="fb-section_title-2 video-games">
+                    <h2>Mô Hình Marvel</h2>
+                </div>
+                <!-- Begin FB's Banner Area -->
+                <div class="fb-banner fb-img-hover-effect">
+                    <a href="~/Product">
+                        
+                        <img src="~/Content/images/products/IronMan.jpg" alt="FB'S Banner" style="object-fit: cover; max-height: 180px;">
+                    </a>
+                </div>
+                <!-- FB's Banner Area End Here -->
+                <div class="fb-product_wrap fb-new_product_wrap bg-white">
+                    <div class="fb-new_product_active owl-carousel">
+                        @foreach (var product in ViewData["Marvel"] as List<Ecommerce.Models.Product>)
+                        {
+                            <!-- Begin Sigle Product Area -->
+                            <div class="single-product">
+                                <!-- Begin Product Image Area -->
+                                <div class="product-img" style="height: 100%">
+                                    <a href="~/Product/Details/@product.ProductID" style="height: 100%">
+                                        <img class="primary-img" src="~/Content/images/products/@product.Thumb" alt="@product.ProductName" style="min-height: 305px; margin-bottom: 10px; max-height: 305px; object-fit: contain; cursor: pointer">
+                                    </a>
+                                    <div class="sticker"><span>New</span></div>
+                                </div>
+                                <!-- Product Image Area End Here -->
+                                <!-- Begin Product Content Area -->
+                                <div class="product-content">
+                                    <h2 class="product-name">
+                                        <a href="~/Product/Details/@product.ProductID">@product.ProductName</a>
+                                    </h2>
+                                    <div class="rating-box">
+                                        <ul class="rating">
+                                            @if (product.Ratting == 0 || product.Ratting == null)
+                                            {
+                                                <li class="no-star"><i class="fa fa-star"></i></li>
+                                                <li class="no-star"><i class="fa fa-star"></i></li>
+                                                <li class="no-star"><i class="fa fa-star"></i></li>
+                                                <li class="no-star"><i class="fa fa-star"></i></li>
+                                                <li class="no-star"><i class="fa fa-star"></i></li>
+                                            }
+                                            else if (product.Ratting == 1)
+                                            {
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li class="no-star"><i class="fa fa-star"></i></li>
+                                                <li class="no-star"><i class="fa fa-star"></i></li>
+                                                <li class="no-star"><i class="fa fa-star"></i></li>
+                                                <li class="no-star"><i class="fa fa-star"></i></li>
+                                            }
+                                            else if (product.Ratting == 2)
+                                            {
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li class="no-star"><i class="fa fa-star"></i></li>
+                                                <li class="no-star"><i class="fa fa-star"></i></li>
+                                                <li class="no-star"><i class="fa fa-star"></i></li>
+                                            }
+                                            else if (product.Ratting == 3)
+                                            {
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li class="no-star"><i class="fa fa-star"></i></li>
+                                                <li class="no-star"><i class="fa fa-star"></i></li>
+                                            }
+                                            else if (product.Ratting == 4)
+                                            {
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li class="no-star"><i class="fa fa-star"></i></li>
+                                            }
+                                            else if (product.Ratting == 5)
+                                            {
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li><i class="fa fa-star"></i></li>
+                                            }
+                                        </ul>
+                                    </div>
+                                    <div class="price-box">
+                                        <span class="new-price">$@product.Price</span>
+                                    </div>
+                                </div>
+                                <!-- Product Content Area End Here -->
+                            </div>
+                            <!-- Sigle Product Area End Here -->
+                        }
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="fb-section_title-2 electronics pt-sm-60 pt-xs-60">
+                    <h2>Mô Hình Gundam</h2>
+                </div>
+                <!-- Begin FB's Banner Area -->
+                <div class="fb-banner fb-img-hover-effect">
+                    <a href="~/Product">
+
+                        <img src="~/Content/images/products/mobile-suit-gundam-the-witch-from-mercury-anime-gundam-aerial-gundam-artwork-hd-wallpaper-preview.jpg" alt="FB'S Banner" style="object-fit: cover; max-height: 180px;">
+                    </a>
+                </div>
+                <!-- FB's Banner Area End Here -->
+                <div class="fb-product_wrap fb-new_product_wrap bg-white">
+                    <div class="fb-new_product_active owl-carousel">
+                        @foreach (var product in ViewData["Gundam"] as List<Ecommerce.Models.Product>)
+                        {
+                            <!-- Begin Sigle Product Area -->
+                            <div class="single-product">
+                                <!-- Begin Product Image Area -->
+                                <div class="product-img" style="height: 100%">
+                                    <a href="~/Product/Details/@product.ProductID" style="height: 100%">
+                                        <img class="primary-img" src="~/Content/images/products/@product.Thumb" alt="@product.ProductName" style="min-height: 305px; margin-bottom: 10px; max-height: 305px; object-fit: contain; cursor: pointer">
+                                    </a>
+                                    <div class="sticker"><span>New</span></div>
+                                </div>
+                                <!-- Product Image Area End Here -->
+                                <!-- Begin Product Content Area -->
+                                <div class="product-content">
+                                    <h2 class="product-name">
+                                        <a href="~/Product/Details/@product.ProductID">@product.ProductName</a>
+                                    </h2>
+                                    <div class="rating-box">
+                                        <ul class="rating">
+                                            @if (product.Ratting == 0 || product.Ratting == null)
+                                            {
+                                                <li class="no-star"><i class="fa fa-star"></i></li>
+                                                <li class="no-star"><i class="fa fa-star"></i></li>
+                                                <li class="no-star"><i class="fa fa-star"></i></li>
+                                                <li class="no-star"><i class="fa fa-star"></i></li>
+                                                <li class="no-star"><i class="fa fa-star"></i></li>
+                                            }
+                                            else if (product.Ratting == 1)
+                                            {
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li class="no-star"><i class="fa fa-star"></i></li>
+                                                <li class="no-star"><i class="fa fa-star"></i></li>
+                                                <li class="no-star"><i class="fa fa-star"></i></li>
+                                                <li class="no-star"><i class="fa fa-star"></i></li>
+                                            }
+                                            else if (product.Ratting == 2)
+                                            {
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li class="no-star"><i class="fa fa-star"></i></li>
+                                                <li class="no-star"><i class="fa fa-star"></i></li>
+                                                <li class="no-star"><i class="fa fa-star"></i></li>
+                                            }
+                                            else if (product.Ratting == 3)
+                                            {
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li class="no-star"><i class="fa fa-star"></i></li>
+                                                <li class="no-star"><i class="fa fa-star"></i></li>
+                                            }
+                                            else if (product.Ratting == 4)
+                                            {
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li class="no-star"><i class="fa fa-star"></i></li>
+                                            }
+                                            else if (product.Ratting == 5)
+                                            {
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li><i class="fa fa-star"></i></li>
+                                            }
+                                        </ul>
+                                    </div>
+                                    <div class="price-box">
+                                        <span class="new-price">$@product.Price</span>
+                                    </div>
+                                </div>
+                                <!-- Product Content Area End Here -->
+                            </div>
+                            <!-- Sigle Product Area End Here -->
+                        }
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- FB's Banner With New Product Two Area End Here -->
+<!-- Begin FB's Banner With New Product Two Area -->
+<div class="fb-banner_with-new_product fb-banner_with-new_product-2 pt-60 pb-60">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="fb-section_title-2 phones-tablets">
+                    <h2>Mô Hình One Piece</h2>
+                </div>
+                <!-- Begin FB's Banner Area -->
+                <div class="fb-banner fb-img-hover-effect">
+                    <a href="~/Product">
+                   
+                        <img src="~/Content/images/products/one-piece-kaido-one-piece-monkey-d-luffy-hd-wallpaper-preview.jpg"  alt="FB'S Banner" style="object-fit: cover; max-height: 180px;">
+                    </a>
+                </div>
+                <!-- FB's Banner Area End Here -->
+                <div class="fb-product_wrap fb-new_product_wrap bg-white">
+                    <div class="fb-new_product_active owl-carousel">
+                        @foreach (var product in ViewData["One Piece"] as List<Ecommerce.Models.Product>)
+                        {
+                            <!-- Begin Sigle Product Area -->
+                            <div class="single-product">
+                                <!-- Begin Product Image Area -->
+                                <div class="product-img" style="height: 100%">
+                                    <a href="~/Product/Details/@product.ProductID" style="height: 100%">
+                                        <img class="primary-img" src="~/Content/images/products/@product.Thumb" alt="@product.ProductName" style="min-height: 305px; margin-bottom: 10px; max-height: 305px; object-fit: contain; cursor: pointer">
+                                    </a>
+                                    <div class="sticker"><span>New</span></div>
+                                </div>
+                                <!-- Product Image Area End Here -->
+                                <!-- Begin Product Content Area -->
+                                <div class="product-content">
+                                    <h2 class="product-name">
+                                        <a href="~/Product/Details/@product.ProductID">@product.ProductName</a>
+                                    </h2>
+                                    <div class="rating-box">
+                                        <ul class="rating">
+                                            @if (product.Ratting == 0 || product.Ratting == null)
+                                            {
+                                                <li class="no-star"><i class="fa fa-star"></i></li>
+                                                <li class="no-star"><i class="fa fa-star"></i></li>
+                                                <li class="no-star"><i class="fa fa-star"></i></li>
+                                                <li class="no-star"><i class="fa fa-star"></i></li>
+                                                <li class="no-star"><i class="fa fa-star"></i></li>
+                                            }
+                                            else if (product.Ratting == 1)
+                                            {
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li class="no-star"><i class="fa fa-star"></i></li>
+                                                <li class="no-star"><i class="fa fa-star"></i></li>
+                                                <li class="no-star"><i class="fa fa-star"></i></li>
+                                                <li class="no-star"><i class="fa fa-star"></i></li>
+                                            }
+                                            else if (product.Ratting == 2)
+                                            {
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li class="no-star"><i class="fa fa-star"></i></li>
+                                                <li class="no-star"><i class="fa fa-star"></i></li>
+                                                <li class="no-star"><i class="fa fa-star"></i></li>
+                                            }
+                                            else if (product.Ratting == 3)
+                                            {
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li class="no-star"><i class="fa fa-star"></i></li>
+                                                <li class="no-star"><i class="fa fa-star"></i></li>
+                                            }
+                                            else if (product.Ratting == 4)
+                                            {
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li class="no-star"><i class="fa fa-star"></i></li>
+                                            }
+                                            else if (product.Ratting == 5)
+                                            {
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li><i class="fa fa-star"></i></li>
+                                            }
+                                        </ul>
+                                    </div>
+                                    <div class="price-box">
+                                        <span class="new-price">$@product.Price</span>
+                                    </div>
+                                </div>
+                                <!-- Product Content Area End Here -->
+                            </div>
+                            <!-- Sigle Product Area End Here -->
+                        }
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="fb-section_title-2 computer-laptop pt-sm-60 pt-xs-60">
+                    <h2>Mô Hình Dragon Balls</h2>
+                </div>
+                <!-- Begin FB's Banner Area -->
+                <div class="fb-banner fb-img-hover-effect">
+                    <a href="~/Product">
+                 
+                        <img src="~/Content/images/products/hinh-nen-7-vien-ngoc-rong-2.jpg"  alt="FB'S Banner" style="object-fit: cover; max-height: 180px;">
+                    </a>
+                </div>
+                <!-- FB's Banner Area End Here -->
+                <div class="fb-product_wrap fb-new_product_wrap bg-white">
+                    <div class="fb-new_product_active owl-carousel">
+                        @foreach (var product in ViewData["Dragon Balls"] as List<Ecommerce.Models.Product>)
+                        {
+                            <!-- Begin Sigle Product Area -->
+                            <div class="single-product">
+                                <!-- Begin Product Image Area -->
+                                <div class="product-img" style="height: 100%">
+                                    <a href="~/Product/Details/@product.ProductID" style="height: 100%">
+                                        <img class="primary-img" src="~/Content/images/products/@product.Thumb" alt="@product.ProductName" style="min-height: 305px; margin-bottom: 10px; max-height: 305px; object-fit: contain; cursor: pointer">
+                                    </a>
+                                    <div class="sticker"><span>New</span></div>
+                                </div>
+                                <!-- Product Image Area End Here -->
+                                <!-- Begin Product Content Area -->
+                                <div class="product-content">
+                                    <h2 class="product-name">
+                                        <a href="~/Product/Details/@product.ProductID">@product.ProductName</a>
+                                    </h2>
+                                    <div class="rating-box">
+                                        <ul class="rating">
+                                            @if (product.Ratting == 0 || product.Ratting == null)
+                                            {
+                                                <li class="no-star"><i class="fa fa-star"></i></li>
+                                                <li class="no-star"><i class="fa fa-star"></i></li>
+                                                <li class="no-star"><i class="fa fa-star"></i></li>
+                                                <li class="no-star"><i class="fa fa-star"></i></li>
+                                                <li class="no-star"><i class="fa fa-star"></i></li>
+                                            }
+                                            else if (product.Ratting == 1)
+                                            {
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li class="no-star"><i class="fa fa-star"></i></li>
+                                                <li class="no-star"><i class="fa fa-star"></i></li>
+                                                <li class="no-star"><i class="fa fa-star"></i></li>
+                                                <li class="no-star"><i class="fa fa-star"></i></li>
+                                            }
+                                            else if (product.Ratting == 2)
+                                            {
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li class="no-star"><i class="fa fa-star"></i></li>
+                                                <li class="no-star"><i class="fa fa-star"></i></li>
+                                                <li class="no-star"><i class="fa fa-star"></i></li>
+                                            }
+                                            else if (product.Ratting == 3)
+                                            {
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li class="no-star"><i class="fa fa-star"></i></li>
+                                                <li class="no-star"><i class="fa fa-star"></i></li>
+                                            }
+                                            else if (product.Ratting == 4)
+                                            {
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li class="no-star"><i class="fa fa-star"></i></li>
+                                            }
+                                            else if (product.Ratting == 5)
+                                            {
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li><i class="fa fa-star"></i></li>
+                                                <li><i class="fa fa-star"></i></li>
+                                            }
+                                        </ul>
+                                    </div>
+                                    <div class="price-box">
+                                        <span class="new-price">$@product.Price</span>
+                                    </div>
+                                </div>
+                                <!-- Product Content Area End Here -->
+                            </div>
+                            <!-- Sigle Product Area End Here -->
+                        }
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- FB's Banner With New Product Two Area End Here -->
+<!-- Begin FB's customer Support Area -->
+<div class="fb-customer_support fb-customer_support-2 pb-60">
+    <div class="container">
+        <div class="row fb-customer_support-nav bg-white ml-0 mr-0">
+            <div class="col-lg-4 col-md-4">
+                <ul class="customer-support_info pt-xs-30">
+                    <li class="customer-support_text">
+                        <i class="fa fa-clock-o"></i>
+                        <span class="customer-support_date">Mon - Fri / 8:00 - 20:00</span>
+                        <span class="customer-support_service">Working Days/Hours!</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-4 col-md-4">
+                <ul class="customer-support_info pt-xs-30">
+                    <li class="customer-support_text">
+                        <i class="fa fa-mobile"></i>
+                        <span class="customer-support_date">0336614167</span>
+                        <span class="customer-support_service">Free support line!</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-4 col-md-4">
+                <ul class="customer-support_info customer-support_info-3 pt-xs-30 pb-xs-30">
+                    <li class="customer-support_text">
+                        <i class="fa fa-envelope-o"></i>
+                        <span class="customer-support_date">contact@DangHai.com</span>
+                        <span class="customer-support_service">Orders Support!</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- FB's customer Support Area End Here -->

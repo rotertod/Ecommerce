@@ -1,0 +1,348 @@
+D:\Workspace\Semester 5\Web Programming (ASP.net)\Ecommerce\Ecommerce\bin\Ecommerce.dll.config
+D:\Workspace\Semester 5\Web Programming (ASP.net)\Ecommerce\Ecommerce\bin\Ecommerce.dll
+D:\Workspace\Semester 5\Web Programming (ASP.net)\Ecommerce\Ecommerce\bin\Ecommerce.pdb
+D:\Workspace\Semester 5\Web Programming (ASP.net)\Ecommerce\Ecommerce\bin\roslyn\csc.exe
+D:\Workspace\Semester 5\Web Programming (ASP.net)\Ecommerce\Ecommerce\bin\roslyn\csc.exe.config
+D:\Workspace\Semester 5\Web Programming (ASP.net)\Ecommerce\Ecommerce\bin\roslyn\csc.rsp
+D:\Workspace\Semester 5\Web Programming (ASP.net)\Ecommerce\Ecommerce\bin\roslyn\csi.exe
+D:\Workspace\Semester 5\Web Programming (ASP.net)\Ecommerce\Ecommerce\bin\roslyn\csi.exe.config
+D:\Workspace\Semester 5\Web Programming (ASP.net)\Ecommerce\Ecommerce\bin\roslyn\csi.rsp
+D:\Workspace\Semester 5\Web Programming (ASP.net)\Ecommerce\Ecommerce\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Workspace\Semester 5\Web Programming (ASP.net)\Ecommerce\Ecommerce\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Workspace\Semester 5\Web Programming (ASP.net)\Ecommerce\Ecommerce\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Workspace\Semester 5\Web Programming (ASP.net)\Ecommerce\Ecommerce\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Workspace\Semester 5\Web Programming (ASP.net)\Ecommerce\Ecommerce\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Workspace\Semester 5\Web Programming (ASP.net)\Ecommerce\Ecommerce\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Workspace\Semester 5\Web Programming (ASP.net)\Ecommerce\Ecommerce\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Workspace\Semester 5\Web Programming (ASP.net)\Ecommerce\Ecommerce\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Workspace\Semester 5\Web Programming (ASP.net)\Ecommerce\Ecommerce\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Workspace\Semester 5\Web Programming (ASP.net)\Ecommerce\Ecommerce\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Workspace\Semester 5\Web Programming (ASP.net)\Ecommerce\Ecommerce\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Workspace\Semester 5\Web Programming (ASP.net)\Ecommerce\Ecommerce\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\Workspace\Semester 5\Web Programming (ASP.net)\Ecommerce\Ecommerce\bin\roslyn\System.AppContext.dll
+D:\Workspace\Semester 5\Web Programming (ASP.net)\Ecommerce\Ecommerce\bin\roslyn\System.Collections.Immutable.dll
+D:\Workspace\Semester 5\Web Programming (ASP.net)\Ecommerce\Ecommerce\bin\roslyn\System.Console.dll
+D:\Workspace\Semester 5\Web Programming (ASP.net)\Ecommerce\Ecommerce\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\Workspace\Semester 5\Web Programming (ASP.net)\Ecommerce\Ecommerce\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Workspace\Semester 5\Web Programming (ASP.net)\Ecommerce\Ecommerce\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Workspace\Semester 5\Web Programming (ASP.net)\Ecommerce\Ecommerce\bin\roslyn\System.Globalization.Calendars.dll
+D:\Workspace\Semester 5\Web Programming (ASP.net)\Ecommerce\Ecommerce\bin\roslyn\System.IO.Compression.dll
+D:\Workspace\Semester 5\Web Programming (ASP.net)\Ecommerce\Ecommerce\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\Workspace\Semester 5\Web Programming (ASP.net)\Ecommerce\Ecommerce\bin\roslyn\System.IO.FileSystem.dll
+D:\Workspace\Semester 5\Web Programming (ASP.net)\Ecommerce\Ecommerce\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Workspace\Semester 5\Web Programming (ASP.net)\Ecommerce\Ecommerce\bin\roslyn\System.Net.Http.dll
+D:\Workspace\Semester 5\Web Programming (ASP.net)\Ecommerce\Ecommerce\bin\roslyn\System.Net.Sockets.dll
+D:\Workspace\Semester 5\Web Programming (ASP.net)\Ecommerce\Ecommerce\bin\roslyn\System.Reflection.Metadata.dll
+D:\Workspace\Semester 5\Web Programming (ASP.net)\Ecommerce\Ecommerce\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\Workspace\Semester 5\Web Programming (ASP.net)\Ecommerce\Ecommerce\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Workspace\Semester 5\Web Programming (ASP.net)\Ecommerce\Ecommerce\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Workspace\Semester 5\Web Programming (ASP.net)\Ecommerce\Ecommerce\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Workspace\Semester 5\Web Programming (ASP.net)\Ecommerce\Ecommerce\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Workspace\Semester 5\Web Programming (ASP.net)\Ecommerce\Ecommerce\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Workspace\Semester 5\Web Programming (ASP.net)\Ecommerce\Ecommerce\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\Workspace\Semester 5\Web Programming (ASP.net)\Ecommerce\Ecommerce\bin\roslyn\System.ValueTuple.dll
+D:\Workspace\Semester 5\Web Programming (ASP.net)\Ecommerce\Ecommerce\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Workspace\Semester 5\Web Programming (ASP.net)\Ecommerce\Ecommerce\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Workspace\Semester 5\Web Programming (ASP.net)\Ecommerce\Ecommerce\bin\roslyn\System.Xml.XPath.dll
+D:\Workspace\Semester 5\Web Programming (ASP.net)\Ecommerce\Ecommerce\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Workspace\Semester 5\Web Programming (ASP.net)\Ecommerce\Ecommerce\bin\roslyn\vbc.exe
+D:\Workspace\Semester 5\Web Programming (ASP.net)\Ecommerce\Ecommerce\bin\roslyn\vbc.exe.config
+D:\Workspace\Semester 5\Web Programming (ASP.net)\Ecommerce\Ecommerce\bin\roslyn\vbc.rsp
+D:\Workspace\Semester 5\Web Programming (ASP.net)\Ecommerce\Ecommerce\bin\roslyn\VBCSCompiler.exe
+D:\Workspace\Semester 5\Web Programming (ASP.net)\Ecommerce\Ecommerce\bin\roslyn\VBCSCompiler.exe.config
+D:\Workspace\Semester 5\Web Programming (ASP.net)\Ecommerce\Ecommerce\bin\Antlr3.Runtime.dll
+D:\Workspace\Semester 5\Web Programming (ASP.net)\Ecommerce\Ecommerce\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Workspace\Semester 5\Web Programming (ASP.net)\Ecommerce\Ecommerce\bin\Microsoft.Web.Infrastructure.dll
+D:\Workspace\Semester 5\Web Programming (ASP.net)\Ecommerce\Ecommerce\bin\Newtonsoft.Json.dll
+D:\Workspace\Semester 5\Web Programming (ASP.net)\Ecommerce\Ecommerce\bin\System.Web.Helpers.dll
+D:\Workspace\Semester 5\Web Programming (ASP.net)\Ecommerce\Ecommerce\bin\System.Web.Mvc.dll
+D:\Workspace\Semester 5\Web Programming (ASP.net)\Ecommerce\Ecommerce\bin\System.Web.Optimization.dll
+D:\Workspace\Semester 5\Web Programming (ASP.net)\Ecommerce\Ecommerce\bin\System.Web.Razor.dll
+D:\Workspace\Semester 5\Web Programming (ASP.net)\Ecommerce\Ecommerce\bin\System.Web.WebPages.Deployment.dll
+D:\Workspace\Semester 5\Web Programming (ASP.net)\Ecommerce\Ecommerce\bin\System.Web.WebPages.dll
+D:\Workspace\Semester 5\Web Programming (ASP.net)\Ecommerce\Ecommerce\bin\System.Web.WebPages.Razor.dll
+D:\Workspace\Semester 5\Web Programming (ASP.net)\Ecommerce\Ecommerce\bin\WebGrease.dll
+D:\Workspace\Semester 5\Web Programming (ASP.net)\Ecommerce\Ecommerce\bin\System.Web.Helpers.xml
+D:\Workspace\Semester 5\Web Programming (ASP.net)\Ecommerce\Ecommerce\bin\System.Web.Mvc.xml
+D:\Workspace\Semester 5\Web Programming (ASP.net)\Ecommerce\Ecommerce\bin\System.Web.Optimization.xml
+D:\Workspace\Semester 5\Web Programming (ASP.net)\Ecommerce\Ecommerce\bin\System.Web.Razor.xml
+D:\Workspace\Semester 5\Web Programming (ASP.net)\Ecommerce\Ecommerce\bin\System.Web.WebPages.xml
+D:\Workspace\Semester 5\Web Programming (ASP.net)\Ecommerce\Ecommerce\bin\System.Web.WebPages.Deployment.xml
+D:\Workspace\Semester 5\Web Programming (ASP.net)\Ecommerce\Ecommerce\bin\System.Web.WebPages.Razor.xml
+D:\Workspace\Semester 5\Web Programming (ASP.net)\Ecommerce\Ecommerce\bin\Newtonsoft.Json.xml
+D:\Workspace\Semester 5\Web Programming (ASP.net)\Ecommerce\Ecommerce\bin\Antlr3.Runtime.pdb
+D:\Workspace\Semester 5\Web Programming (ASP.net)\Ecommerce\Ecommerce\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Workspace\Semester 5\Web Programming (ASP.net)\Ecommerce\Ecommerce\obj\Debug\Ecommerce.csproj.AssemblyReference.cache
+D:\Workspace\Semester 5\Web Programming (ASP.net)\Ecommerce\Ecommerce\obj\Debug\Ecommerce.csproj.CoreCompileInputs.cache
+D:\Workspace\Semester 5\Web Programming (ASP.net)\Ecommerce\Ecommerce\obj\Debug\Ecommerce.csproj.CopyComplete
+D:\Workspace\Semester 5\Web Programming (ASP.net)\Ecommerce\Ecommerce\obj\Debug\Ecommerce.dll
+D:\Workspace\Semester 5\Web Programming (ASP.net)\Ecommerce\Ecommerce\obj\Debug\Ecommerce.pdb
+D:\Workspace\Semester 5\Web Programming (ASP.net)\Ecommerce\Ecommerce\bin\EntityFramework.dll
+D:\Workspace\Semester 5\Web Programming (ASP.net)\Ecommerce\Ecommerce\bin\EntityFramework.SqlServer.dll
+D:\Workspace\Semester 5\Web Programming (ASP.net)\Ecommerce\Ecommerce\bin\EntityFramework.xml
+D:\Workspace\Semester 5\Web Programming (ASP.net)\Ecommerce\Ecommerce\bin\EntityFramework.SqlServer.xml
+D:\Workspace\Semester 5\Web Programming (ASP.net)\Ecommerce\Ecommerce\bin\PagedList.dll
+D:\Workspace\Semester 5\Web Programming (ASP.net)\Ecommerce\Ecommerce\bin\PagedList.Mvc.dll
+D:\Workspace\Semester 5\Web Programming (ASP.net)\Ecommerce\Ecommerce\bin\PagedList.xml
+D:\Workspace\Semester 5\Web Programming (ASP.net)\Ecommerce\Ecommerce\bin\PagedList.Mvc.xml
+D:\Ecommerce2\Ecommerce\Ecommerce\bin\Ecommerce.dll.config
+D:\Ecommerce2\Ecommerce\Ecommerce\bin\Ecommerce.dll
+D:\Ecommerce2\Ecommerce\Ecommerce\bin\Ecommerce.pdb
+D:\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\csc.exe
+D:\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\csc.exe.config
+D:\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\csc.rsp
+D:\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\csi.exe
+D:\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\csi.exe.config
+D:\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\csi.rsp
+D:\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\System.AppContext.dll
+D:\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\System.Collections.Immutable.dll
+D:\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\System.Console.dll
+D:\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\System.Globalization.Calendars.dll
+D:\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\System.IO.Compression.dll
+D:\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\System.IO.FileSystem.dll
+D:\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\System.Net.Http.dll
+D:\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\System.Net.Sockets.dll
+D:\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\System.Reflection.Metadata.dll
+D:\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\System.ValueTuple.dll
+D:\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\System.Xml.XPath.dll
+D:\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\vbc.exe
+D:\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\vbc.exe.config
+D:\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\vbc.rsp
+D:\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\VBCSCompiler.exe
+D:\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\VBCSCompiler.exe.config
+D:\Ecommerce2\Ecommerce\Ecommerce\bin\Antlr3.Runtime.dll
+D:\Ecommerce2\Ecommerce\Ecommerce\bin\EntityFramework.dll
+D:\Ecommerce2\Ecommerce\Ecommerce\bin\EntityFramework.SqlServer.dll
+D:\Ecommerce2\Ecommerce\Ecommerce\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Ecommerce2\Ecommerce\Ecommerce\bin\Microsoft.Web.Infrastructure.dll
+D:\Ecommerce2\Ecommerce\Ecommerce\bin\Newtonsoft.Json.dll
+D:\Ecommerce2\Ecommerce\Ecommerce\bin\PagedList.dll
+D:\Ecommerce2\Ecommerce\Ecommerce\bin\PagedList.Mvc.dll
+D:\Ecommerce2\Ecommerce\Ecommerce\bin\System.Web.Helpers.dll
+D:\Ecommerce2\Ecommerce\Ecommerce\bin\System.Web.Mvc.dll
+D:\Ecommerce2\Ecommerce\Ecommerce\bin\System.Web.Optimization.dll
+D:\Ecommerce2\Ecommerce\Ecommerce\bin\System.Web.Razor.dll
+D:\Ecommerce2\Ecommerce\Ecommerce\bin\System.Web.WebPages.Deployment.dll
+D:\Ecommerce2\Ecommerce\Ecommerce\bin\System.Web.WebPages.dll
+D:\Ecommerce2\Ecommerce\Ecommerce\bin\System.Web.WebPages.Razor.dll
+D:\Ecommerce2\Ecommerce\Ecommerce\bin\WebGrease.dll
+D:\Ecommerce2\Ecommerce\Ecommerce\bin\EntityFramework.xml
+D:\Ecommerce2\Ecommerce\Ecommerce\bin\EntityFramework.SqlServer.xml
+D:\Ecommerce2\Ecommerce\Ecommerce\bin\PagedList.xml
+D:\Ecommerce2\Ecommerce\Ecommerce\bin\PagedList.Mvc.xml
+D:\Ecommerce2\Ecommerce\Ecommerce\bin\System.Web.Helpers.xml
+D:\Ecommerce2\Ecommerce\Ecommerce\bin\System.Web.Mvc.xml
+D:\Ecommerce2\Ecommerce\Ecommerce\bin\System.Web.Optimization.xml
+D:\Ecommerce2\Ecommerce\Ecommerce\bin\System.Web.Razor.xml
+D:\Ecommerce2\Ecommerce\Ecommerce\bin\System.Web.WebPages.xml
+D:\Ecommerce2\Ecommerce\Ecommerce\bin\System.Web.WebPages.Deployment.xml
+D:\Ecommerce2\Ecommerce\Ecommerce\bin\System.Web.WebPages.Razor.xml
+D:\Ecommerce2\Ecommerce\Ecommerce\bin\Newtonsoft.Json.xml
+D:\Ecommerce2\Ecommerce\Ecommerce\bin\Antlr3.Runtime.pdb
+D:\Ecommerce2\Ecommerce\Ecommerce\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Ecommerce2\Ecommerce\Ecommerce\obj\Debug\Ecommerce.csproj.AssemblyReference.cache
+D:\Ecommerce2\Ecommerce\Ecommerce\obj\Debug\Ecommerce.csproj.CoreCompileInputs.cache
+D:\Ecommerce2\Ecommerce\Ecommerce\obj\Debug\Ecommerce.csproj.CopyComplete
+D:\Ecommerce2\Ecommerce\Ecommerce\obj\Debug\Ecommerce.dll
+D:\Ecommerce2\Ecommerce\Ecommerce\obj\Debug\Ecommerce.pdb
+D:\Web\Ecommerce2\Ecommerce\Ecommerce\bin\Ecommerce.dll.config
+D:\Web\Ecommerce2\Ecommerce\Ecommerce\bin\Ecommerce.dll
+D:\Web\Ecommerce2\Ecommerce\Ecommerce\bin\Ecommerce.pdb
+D:\Web\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\csc.exe
+D:\Web\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\csc.exe.config
+D:\Web\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\csc.rsp
+D:\Web\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\csi.exe
+D:\Web\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\csi.exe.config
+D:\Web\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\csi.rsp
+D:\Web\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Web\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Web\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Web\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Web\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Web\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Web\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Web\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Web\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Web\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Web\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Web\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\Web\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\System.AppContext.dll
+D:\Web\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\System.Collections.Immutable.dll
+D:\Web\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\System.Console.dll
+D:\Web\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\Web\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Web\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Web\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\System.Globalization.Calendars.dll
+D:\Web\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\System.IO.Compression.dll
+D:\Web\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\Web\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\System.IO.FileSystem.dll
+D:\Web\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Web\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\System.Net.Http.dll
+D:\Web\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\System.Net.Sockets.dll
+D:\Web\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\System.Reflection.Metadata.dll
+D:\Web\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\Web\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Web\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Web\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Web\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Web\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Web\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\Web\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\System.ValueTuple.dll
+D:\Web\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Web\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Web\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\System.Xml.XPath.dll
+D:\Web\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Web\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\vbc.exe
+D:\Web\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\vbc.exe.config
+D:\Web\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\vbc.rsp
+D:\Web\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\VBCSCompiler.exe
+D:\Web\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\VBCSCompiler.exe.config
+D:\Web\Ecommerce2\Ecommerce\Ecommerce\bin\Antlr3.Runtime.dll
+D:\Web\Ecommerce2\Ecommerce\Ecommerce\bin\EntityFramework.dll
+D:\Web\Ecommerce2\Ecommerce\Ecommerce\bin\EntityFramework.SqlServer.dll
+D:\Web\Ecommerce2\Ecommerce\Ecommerce\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Web\Ecommerce2\Ecommerce\Ecommerce\bin\Microsoft.Web.Infrastructure.dll
+D:\Web\Ecommerce2\Ecommerce\Ecommerce\bin\Newtonsoft.Json.dll
+D:\Web\Ecommerce2\Ecommerce\Ecommerce\bin\PagedList.dll
+D:\Web\Ecommerce2\Ecommerce\Ecommerce\bin\PagedList.Mvc.dll
+D:\Web\Ecommerce2\Ecommerce\Ecommerce\bin\System.Web.Helpers.dll
+D:\Web\Ecommerce2\Ecommerce\Ecommerce\bin\System.Web.Mvc.dll
+D:\Web\Ecommerce2\Ecommerce\Ecommerce\bin\System.Web.Optimization.dll
+D:\Web\Ecommerce2\Ecommerce\Ecommerce\bin\System.Web.Razor.dll
+D:\Web\Ecommerce2\Ecommerce\Ecommerce\bin\System.Web.WebPages.Deployment.dll
+D:\Web\Ecommerce2\Ecommerce\Ecommerce\bin\System.Web.WebPages.dll
+D:\Web\Ecommerce2\Ecommerce\Ecommerce\bin\System.Web.WebPages.Razor.dll
+D:\Web\Ecommerce2\Ecommerce\Ecommerce\bin\WebGrease.dll
+D:\Web\Ecommerce2\Ecommerce\Ecommerce\bin\EntityFramework.xml
+D:\Web\Ecommerce2\Ecommerce\Ecommerce\bin\EntityFramework.SqlServer.xml
+D:\Web\Ecommerce2\Ecommerce\Ecommerce\bin\PagedList.xml
+D:\Web\Ecommerce2\Ecommerce\Ecommerce\bin\PagedList.Mvc.xml
+D:\Web\Ecommerce2\Ecommerce\Ecommerce\bin\System.Web.Helpers.xml
+D:\Web\Ecommerce2\Ecommerce\Ecommerce\bin\System.Web.Mvc.xml
+D:\Web\Ecommerce2\Ecommerce\Ecommerce\bin\System.Web.Optimization.xml
+D:\Web\Ecommerce2\Ecommerce\Ecommerce\bin\System.Web.Razor.xml
+D:\Web\Ecommerce2\Ecommerce\Ecommerce\bin\System.Web.WebPages.xml
+D:\Web\Ecommerce2\Ecommerce\Ecommerce\bin\System.Web.WebPages.Deployment.xml
+D:\Web\Ecommerce2\Ecommerce\Ecommerce\bin\System.Web.WebPages.Razor.xml
+D:\Web\Ecommerce2\Ecommerce\Ecommerce\bin\Newtonsoft.Json.xml
+D:\Web\Ecommerce2\Ecommerce\Ecommerce\bin\Antlr3.Runtime.pdb
+D:\Web\Ecommerce2\Ecommerce\Ecommerce\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Web\Ecommerce2\Ecommerce\Ecommerce\obj\Debug\Ecommerce.csproj.AssemblyReference.cache
+D:\Web\Ecommerce2\Ecommerce\Ecommerce\obj\Debug\Ecommerce.csproj.CoreCompileInputs.cache
+D:\Web\Ecommerce2\Ecommerce\Ecommerce\obj\Debug\Ecommerce.csproj.CopyComplete
+D:\Web\Ecommerce2\Ecommerce\Ecommerce\obj\Debug\Ecommerce.dll
+D:\Web\Ecommerce2\Ecommerce\Ecommerce\obj\Debug\Ecommerce.pdb
+C:\Users\Nhat\Downloads\Ecommerce2 (1)\Ecommerce2\Ecommerce\Ecommerce\bin\Ecommerce.dll.config
+C:\Users\Nhat\Downloads\Ecommerce2 (1)\Ecommerce2\Ecommerce\Ecommerce\bin\Ecommerce.dll
+C:\Users\Nhat\Downloads\Ecommerce2 (1)\Ecommerce2\Ecommerce\Ecommerce\bin\Ecommerce.pdb
+C:\Users\Nhat\Downloads\Ecommerce2 (1)\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\csc.exe
+C:\Users\Nhat\Downloads\Ecommerce2 (1)\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\csc.exe.config
+C:\Users\Nhat\Downloads\Ecommerce2 (1)\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\csc.rsp
+C:\Users\Nhat\Downloads\Ecommerce2 (1)\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\csi.exe
+C:\Users\Nhat\Downloads\Ecommerce2 (1)\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\csi.exe.config
+C:\Users\Nhat\Downloads\Ecommerce2 (1)\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\csi.rsp
+C:\Users\Nhat\Downloads\Ecommerce2 (1)\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Nhat\Downloads\Ecommerce2 (1)\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Nhat\Downloads\Ecommerce2 (1)\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Nhat\Downloads\Ecommerce2 (1)\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Nhat\Downloads\Ecommerce2 (1)\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Nhat\Downloads\Ecommerce2 (1)\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Nhat\Downloads\Ecommerce2 (1)\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Nhat\Downloads\Ecommerce2 (1)\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Nhat\Downloads\Ecommerce2 (1)\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Nhat\Downloads\Ecommerce2 (1)\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Nhat\Downloads\Ecommerce2 (1)\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Nhat\Downloads\Ecommerce2 (1)\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\Nhat\Downloads\Ecommerce2 (1)\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\System.AppContext.dll
+C:\Users\Nhat\Downloads\Ecommerce2 (1)\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Nhat\Downloads\Ecommerce2 (1)\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\System.Console.dll
+C:\Users\Nhat\Downloads\Ecommerce2 (1)\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Nhat\Downloads\Ecommerce2 (1)\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Nhat\Downloads\Ecommerce2 (1)\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Nhat\Downloads\Ecommerce2 (1)\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\Nhat\Downloads\Ecommerce2 (1)\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\System.IO.Compression.dll
+C:\Users\Nhat\Downloads\Ecommerce2 (1)\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\Nhat\Downloads\Ecommerce2 (1)\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Nhat\Downloads\Ecommerce2 (1)\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Nhat\Downloads\Ecommerce2 (1)\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\System.Net.Http.dll
+C:\Users\Nhat\Downloads\Ecommerce2 (1)\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\System.Net.Sockets.dll
+C:\Users\Nhat\Downloads\Ecommerce2 (1)\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Nhat\Downloads\Ecommerce2 (1)\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\Nhat\Downloads\Ecommerce2 (1)\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Nhat\Downloads\Ecommerce2 (1)\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Nhat\Downloads\Ecommerce2 (1)\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Nhat\Downloads\Ecommerce2 (1)\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Nhat\Downloads\Ecommerce2 (1)\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Nhat\Downloads\Ecommerce2 (1)\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\Nhat\Downloads\Ecommerce2 (1)\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\System.ValueTuple.dll
+C:\Users\Nhat\Downloads\Ecommerce2 (1)\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Nhat\Downloads\Ecommerce2 (1)\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Nhat\Downloads\Ecommerce2 (1)\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Nhat\Downloads\Ecommerce2 (1)\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Nhat\Downloads\Ecommerce2 (1)\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\vbc.exe
+C:\Users\Nhat\Downloads\Ecommerce2 (1)\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\vbc.exe.config
+C:\Users\Nhat\Downloads\Ecommerce2 (1)\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\vbc.rsp
+C:\Users\Nhat\Downloads\Ecommerce2 (1)\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\VBCSCompiler.exe
+C:\Users\Nhat\Downloads\Ecommerce2 (1)\Ecommerce2\Ecommerce\Ecommerce\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Nhat\Downloads\Ecommerce2 (1)\Ecommerce2\Ecommerce\Ecommerce\bin\Antlr3.Runtime.dll
+C:\Users\Nhat\Downloads\Ecommerce2 (1)\Ecommerce2\Ecommerce\Ecommerce\bin\EntityFramework.dll
+C:\Users\Nhat\Downloads\Ecommerce2 (1)\Ecommerce2\Ecommerce\Ecommerce\bin\EntityFramework.SqlServer.dll
+C:\Users\Nhat\Downloads\Ecommerce2 (1)\Ecommerce2\Ecommerce\Ecommerce\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Nhat\Downloads\Ecommerce2 (1)\Ecommerce2\Ecommerce\Ecommerce\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Nhat\Downloads\Ecommerce2 (1)\Ecommerce2\Ecommerce\Ecommerce\bin\Newtonsoft.Json.dll
+C:\Users\Nhat\Downloads\Ecommerce2 (1)\Ecommerce2\Ecommerce\Ecommerce\bin\PagedList.dll
+C:\Users\Nhat\Downloads\Ecommerce2 (1)\Ecommerce2\Ecommerce\Ecommerce\bin\PagedList.Mvc.dll
+C:\Users\Nhat\Downloads\Ecommerce2 (1)\Ecommerce2\Ecommerce\Ecommerce\bin\System.Web.Helpers.dll
+C:\Users\Nhat\Downloads\Ecommerce2 (1)\Ecommerce2\Ecommerce\Ecommerce\bin\System.Web.Mvc.dll
+C:\Users\Nhat\Downloads\Ecommerce2 (1)\Ecommerce2\Ecommerce\Ecommerce\bin\System.Web.Optimization.dll
+C:\Users\Nhat\Downloads\Ecommerce2 (1)\Ecommerce2\Ecommerce\Ecommerce\bin\System.Web.Razor.dll
+C:\Users\Nhat\Downloads\Ecommerce2 (1)\Ecommerce2\Ecommerce\Ecommerce\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Nhat\Downloads\Ecommerce2 (1)\Ecommerce2\Ecommerce\Ecommerce\bin\System.Web.WebPages.dll
+C:\Users\Nhat\Downloads\Ecommerce2 (1)\Ecommerce2\Ecommerce\Ecommerce\bin\System.Web.WebPages.Razor.dll
+C:\Users\Nhat\Downloads\Ecommerce2 (1)\Ecommerce2\Ecommerce\Ecommerce\bin\WebGrease.dll
+C:\Users\Nhat\Downloads\Ecommerce2 (1)\Ecommerce2\Ecommerce\Ecommerce\bin\EntityFramework.xml
+C:\Users\Nhat\Downloads\Ecommerce2 (1)\Ecommerce2\Ecommerce\Ecommerce\bin\EntityFramework.SqlServer.xml
+C:\Users\Nhat\Downloads\Ecommerce2 (1)\Ecommerce2\Ecommerce\Ecommerce\bin\PagedList.xml
+C:\Users\Nhat\Downloads\Ecommerce2 (1)\Ecommerce2\Ecommerce\Ecommerce\bin\PagedList.Mvc.xml
+C:\Users\Nhat\Downloads\Ecommerce2 (1)\Ecommerce2\Ecommerce\Ecommerce\bin\System.Web.Helpers.xml
+C:\Users\Nhat\Downloads\Ecommerce2 (1)\Ecommerce2\Ecommerce\Ecommerce\bin\System.Web.Mvc.xml
+C:\Users\Nhat\Downloads\Ecommerce2 (1)\Ecommerce2\Ecommerce\Ecommerce\bin\System.Web.Optimization.xml
+C:\Users\Nhat\Downloads\Ecommerce2 (1)\Ecommerce2\Ecommerce\Ecommerce\bin\System.Web.Razor.xml
+C:\Users\Nhat\Downloads\Ecommerce2 (1)\Ecommerce2\Ecommerce\Ecommerce\bin\System.Web.WebPages.xml
+C:\Users\Nhat\Downloads\Ecommerce2 (1)\Ecommerce2\Ecommerce\Ecommerce\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Nhat\Downloads\Ecommerce2 (1)\Ecommerce2\Ecommerce\Ecommerce\bin\System.Web.WebPages.Razor.xml
+C:\Users\Nhat\Downloads\Ecommerce2 (1)\Ecommerce2\Ecommerce\Ecommerce\bin\Newtonsoft.Json.xml
+C:\Users\Nhat\Downloads\Ecommerce2 (1)\Ecommerce2\Ecommerce\Ecommerce\bin\Antlr3.Runtime.pdb
+C:\Users\Nhat\Downloads\Ecommerce2 (1)\Ecommerce2\Ecommerce\Ecommerce\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Nhat\Downloads\Ecommerce2 (1)\Ecommerce2\Ecommerce\Ecommerce\obj\Debug\Ecommerce.csproj.AssemblyReference.cache
+C:\Users\Nhat\Downloads\Ecommerce2 (1)\Ecommerce2\Ecommerce\Ecommerce\obj\Debug\Ecommerce.csproj.CoreCompileInputs.cache
+C:\Users\Nhat\Downloads\Ecommerce2 (1)\Ecommerce2\Ecommerce\Ecommerce\obj\Debug\Ecommerce.csproj.CopyComplete
+C:\Users\Nhat\Downloads\Ecommerce2 (1)\Ecommerce2\Ecommerce\Ecommerce\obj\Debug\Ecommerce.dll
+C:\Users\Nhat\Downloads\Ecommerce2 (1)\Ecommerce2\Ecommerce\Ecommerce\obj\Debug\Ecommerce.pdb

@@ -1,0 +1,143 @@
+﻿@model PagedList.IPagedList<Ecommerce.Models.TinTuc>
+@using PagedList.Mvc;
+
+@{
+    ViewBag.Title = "Danh sách tin tức";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="page-header">
+    <div class="container-fluid pt-4 px-4">
+        <div class="rounded h-100 p-2 header-sub-title">
+            <nav style="margin-bottom: 4px" class="breadcrumb breadcrumb-dash">
+                <a href="~/Admin/HomeAdmin" class="breadcrumb-item"><i class="fa fa-home"></i> Home</a>
+                <span class="breadcrumb-item active">Danh sách tin tức</span>
+            </nav>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid pt-4 px-4">
+    <div class="col-12">
+        <div class="rounded h-100 p-4">
+            <div class="d-md-flex mb-4 justify-content-between align-items-center">
+                <h6 class="mb-4">Danh sách tin tức</h6>
+                <a href="~/Admin/AdminTinTucs/Create" class="btn btn-outline-info" style="line-height: 28px;">
+                    <span style="margin-right: 6px; font-size: 20px">+</span>
+                    Create
+                </a>
+            </div>
+            <div class="table-responsive">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">ID</th>
+                            <th style="width: 32%">Title</th>
+                            <th>Ngày tạo</th>
+                            <th>Trạng thái</th>
+                            <th>Tin hot</th>
+                            <th>New Feed</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody style="vertical-align: middle">
+                        @if (Model != null)
+                        {
+                            foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td>@item.PostID</td>
+                                    <td>@item.Title</td>
+                                    <td>@item.CreatedDate.Value.ToShortDateString()</td>
+                                    <td>
+                                        @if (item.Published == true)
+                                        {
+                                            <div class="d-flex align-items-center">
+                                                <div style="width: 8px; height: 8px; margin-right: 6px" class="bg-success rounded-circle"></div>
+                                                <div>Public</div>
+                                            </div>
+                                        }
+                                        else
+                                        {
+                                            <div class="d-flex align-items-center">
+                                                <div style="width: 8px; height: 8px; margin-right: 6px" class="bg-danger rounded-circle"></div>
+                                                <div>Non-Public</div>
+                                            </div>
+                                        }
+                                    </td>
+                                    <td>
+                                        @if (item.isHot == true)
+                                        {
+                                            <div class="d-flex align-items-center">
+                                                <div style="width: 8px; height: 8px; margin-right: 6px" class="bg-success rounded-circle"></div>
+                                                <div>Hot</div>
+                                            </div>
+                                        }
+                                        else
+                                        {
+                                            <div class="d-flex align-items-center">
+                                                <div style="width: 8px; height: 8px; margin-right: 6px" class="bg-danger rounded-circle"></div>
+                                                <div>None</div>
+                                            </div>
+                                        }
+                                    </td>
+                                    <td>
+                                        @if (item.isNewFeed == true)
+                                        {
+                                            <div class="d-flex align-items-center">
+                                                <div style="width: 8px; height: 8px; margin-right: 6px" class="bg-success rounded-circle"></div>
+                                                <div>NewFeed</div>
+                                            </div>
+                                        }
+                                        else
+                                        {
+                                            <div class="d-flex align-items-center">
+                                                <div style="width: 8px; height: 8px; margin-right: 6px" class="bg-danger rounded-circle"></div>
+                                                <div>None</div>
+                                            </div>
+                                        }
+                                    </td>
+                                    <td>
+                                        <a class="btn btn-outline-success m-2" href="~/Admin/AdminTinTucs/Details/@item.PostID">View</a>
+                                        <a class="btn btn-outline-warning m-2" href="~/Admin/AdminTinTucs/Edit/@item.PostID">Edit</a>
+                                        <a class="btn btn-outline-danger m-2" href="~/Admin/AdminTinTucs/Delete/@item.PostID">Delete</a>
+                                    </td>
+                                </tr>
+                            }
+                        }
+
+                    </tbody>
+                </table>
+
+                @if (Model.PageCount > 1)
+                {
+                    <div class="btn-toolbar justify-content-center" role="toolbar">
+                        @if (Model.HasPreviousPage)
+                        {
+                            <div class="btn-group me-2" role="group" aria-label="Third group">
+                                <a class="btn btn-secondary" href="@Url.Action("Index", new { page = Model.PageNumber - 1 })"><</a>
+                            </div>
+                        }
+
+                        @for (int i = 1; i <= Model.PageCount; i++)
+                        {
+                            <div class="btn-group me-2" role="group" aria-label="First group">
+                                <a class="btn @(Model.PageNumber == i ? "btn-primary" : "btn-secondary")" href="@Url.Action("Index", new { page = i })">@i</a>
+                            </div>
+                        }
+
+                        @if (Model.HasNextPage)
+                        {
+                            <div class="btn-group me-2" role="group" aria-label="Third group">
+                                <a class="btn btn-secondary" href="@Url.Action("Index", new { page = Model.PageNumber + 1 })">></a>
+                            </div>
+                        }
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+
+</div>
+
+

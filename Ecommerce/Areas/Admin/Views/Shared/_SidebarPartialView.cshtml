@@ -1,0 +1,81 @@
+﻿<aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <!-- Brand Logo -->
+    <a href="index3.html" class="brand-link">
+        <img src="~/Content/AdminAssets/img/logo.png" alt="logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+        <span class="brand-text font-weight-light">Figure Store</span>
+    </a>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <!-- Sidebar user panel (optional) -->
+        <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+            @{
+                var user = (Ecommerce.Models.Account)HttpContext.Current.Session["user"];
+            }
+            <div class="image">
+                <img src="~/Content/images/accounts/@user.Avatar" class="img-circle elevation-2" alt="User Image">
+            </div>
+            <div class="info">
+                <a href="#" class="d-block">@user.FullName</a>
+            </div>
+        </div>
+
+        <!-- Sidebar Menu -->
+        <nav class="mt-2">
+            <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+                <!-- Add icons to the links using the .nav-icon class
+    with font-awesome or any other icon font library -->
+                <li class="nav-item">
+                    <a href="~/Admin/AdminCategories" class="nav-link">
+                        <i class="nav-icon fas fa-tree"></i>
+                        <p>
+                            Quản lý danh mục
+                        </p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="~/Admin/AdminProducts" class="nav-link">
+                        <i class="nav-icon fas fa-tree"></i>
+                        <p>
+                            Quản lý sản phẩm
+                        </p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="~/Admin/AdminRoles" class="nav-link">
+                        <i class="nav-icon fas fa-tree"></i>
+                        <p>
+                            Quản lý quyền truy cập
+                        </p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="~/Admin/AdminPages" class="nav-link">
+                        <i class="nav-icon fas fa-tree"></i>
+                        <p>
+                            Quản lý Page
+                        </p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="~/Admin/AdminTinTucs" class="nav-link">
+                        <i class="nav-icon fas fa-tree"></i>
+                        <p>
+                            Quản lý tin tức
+                        </p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="~/Admin/AdminAccounts" class="nav-link">
+                        <i class="nav-icon fas fa-tree"></i>
+                        <p>
+                            Quản lý tài khoản
+                        </p>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+</aside>
